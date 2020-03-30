@@ -1,2 +1,16 @@
 @import "variables";
+@import "grid";
 @import "buttons";
+@import "form";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+
+    body {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        width: 100%;
+    }
+}

@@ -1,0 +1,53 @@
+input,
+textarea,
+select,
+fieldset {
+    margin-bottom: 1.5rem;
+}
+
+label,
+legend {
+    display: block;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    background: #fff;
+    border: 0.0625rem solid #bbb;
+    border-radius: $borderRadius;
+    color: $primaryColor;
+    display: block;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    padding: .375rem .75rem;
+    transition: .2s ease-in-out;
+    transition-property: color,
+        background-color,
+        border;
+    width: 100%;
+
+    &:focus {
+        background-color: #fff;
+        color: #666;
+        border-color: $primaryColor;
+        outline: none;
+    }
+}
+
+input[type="search"] {
+    height: 2.375rem;
+}
+
+select {
+    padding: 0;
+}

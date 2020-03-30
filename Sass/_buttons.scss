@@ -1,0 +1,49 @@
+button,
+.btn,
+input[type="button"],
+input[type="submit"] {
+    background-color: transparent;
+    border: 0.0625rem solid #bbb;
+    border-radius: $borderRadius;
+    box-sizing: border-box;
+    color: $primaryColor;
+    display: inline-flex;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    font-family: $fontFamily;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    letter-spacing: .08rem;
+    margin: .5rem 0;
+    padding: 0 1.875rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+        color: #222;
+        border-color: #888;
+        outline: 0;
+    }
+
+    &:disabled {
+        color: #888;
+        border-color: #bbb;
+    }
+}
+
+
+// .btn-p {
+//     color: white;
+//     background-color: $primaryColor;
+//     border-color: $primaryColor;
+//     &:hover{
+//         color: wheat;
+//     }
+// }
