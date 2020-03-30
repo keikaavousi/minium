@@ -27,7 +27,7 @@ select {
     border-radius: $borderRadius;
     color: $primaryColor;
     display: block;
-    height: 1.5rem;
+    height: 2.375rem;
     margin-bottom: 1rem;
     padding: .375rem .75rem;
     transition: .2s ease-in-out;
@@ -42,10 +42,6 @@ select {
         border-color: $primaryColor;
         outline: none;
     }
-}
-
-input[type="search"] {
-    height: 2.375rem;
 }
 
 select {
