@@ -1,17 +1,39 @@
+%inputs {
+    background-color: transparent;
+    border: 0.0625rem solid #bbb;
+    border-radius: $borderRadius;
+    color: $primaryColor;
+    display: inline-flex;
+}
+
+%height {
+    height: 2.375rem;
+}
+
+input[type="file"] {
+    @extend %height;
+    padding: .375rem;
+}
+
+input,
+button {
+    &::placeholder {
+        text-transform: capitalize;
+    }
+}
+
+input {
+    @extend %inputs;
+}
+
 button,
 .btn,
 input[type="button"],
 input[type="submit"] {
-    background-color: transparent;
-    border: 0.0625rem solid #bbb;
-    border-radius: $borderRadius;
-    box-sizing: border-box;
-    color: $primaryColor;
-    display: inline-flex;
+    @extend %inputs;
+    @extend %height;
     font-size: 0.6875rem;
     font-weight: 400;
-    font-family: $fontFamily;
-    height: 2.375rem;
     line-height: 2.375rem;
     letter-spacing: .08rem;
     margin: .5rem 0;
@@ -36,6 +58,7 @@ input[type="submit"] {
         color: #888;
         border-color: #bbb;
     }
+
 }
 
 
