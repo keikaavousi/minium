@@ -11,4 +11,10 @@
         width: 100%;
         overflow-x: hidden;
     }
+
+    &::selection {
+        background: $primaryColor;
+        color: #fff;
+        text-shadow: none;
+    }
 }

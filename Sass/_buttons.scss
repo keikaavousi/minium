@@ -10,11 +10,6 @@
     height: 2.375rem;
 }
 
-input[type="file"] {
-    @extend %height;
-    padding: .375rem;
-}
-
 input,
 button {
     &::placeholder {
@@ -29,7 +24,8 @@ input {
 button,
 .btn,
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
     @extend %inputs;
     @extend %height;
     font-size: 0.6875rem;
@@ -51,6 +47,7 @@ input[type="submit"] {
     &:focus {
         color: #222;
         border-color: #888;
+        //box-shadow: 0 0 0 0.125em rgba(186, 186, 187, 0.25);
         outline: 0;
     }
 
@@ -60,13 +57,3 @@ input[type="submit"] {
     }
 
 }
-
-
-// .btn-p {
-//     color: white;
-//     background-color: $primaryColor;
-//     border-color: $primaryColor;
-//     &:hover{
-//         color: wheat;
-//     }
-// }
