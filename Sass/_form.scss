@@ -60,7 +60,6 @@ option {
 
 
 input[type="file"] {
-    @extend %height;
     padding: .45rem;
 }
 
@@ -74,14 +73,7 @@ input[type="time"] {
 }
 
 input[type="range"] {
-    box-sizing: border-box;
-    margin: 0;
-    vertical-align: middle;
-    max-width: 100%;
     width: 100%;
-    -webkit-appearance: none;
-    background: transparent;
-    padding: 0;
 }
 
 input[type="color"] {
@@ -95,37 +87,46 @@ fieldset {
 
 %custominput {
 
-    &:checked,
-    &:not(:checked) {
-        position: absolute;
-        opacity: 0;
-    }
+    position: absolute;
+    opacity: 0;
 
-    &:checked+label,
-    &:not(:checked)+label {
+    &+label {
         position: relative;
         padding-left: 28px;
         cursor: pointer;
         line-height: 20px;
         display: inline-block;
+        color: #bbb;
+    }
+
+    &:checked+label {
         color: $primaryColor;
     }
 
-    &:checked+label::before,
-    &:not(:checked)+label::before {
+    &+label::before {
         content: '';
         position: absolute;
         left: 0;
         top: 0;
         width: 18px;
         height: 18px;
-        // border: 1px solid #ddd;
-        border: 1px solid $primaryColor;
+        border: 1px solid #bbb;
         background: white;
     }
 
-    &:checked+label:after,
-    &:not(:checked)+label:after {
+    &:checked+label::before {
+        border-color: $primaryColor;
+    }
+
+    &+label:hover::before {
+        border-color: $primaryColor;
+    }
+
+    &+label:hover {
+        color: $primaryColor;
+    }
+
+    &+label:after {
         content: '';
         width: 12px;
         height: 12px;
@@ -144,24 +145,17 @@ fieldset {
         opacity: 1;
         transform: scale(1);
     }
-
-    // &:focus:checked+label::before,
-    // &:focus:not(:checked)+label::before {
-    //     color: $primaryColor;
-    // }
 }
 
 .customRInp {
 
     @extend %custominput;
 
-    &:checked+label:before,
-    &:not(:checked)+label:before {
+    &+label:before {
         border-radius: 100%;
     }
 
-    &:checked+label:after,
-    &:not(:checked)+label:after {
+    &:checked+label:after {
         background: $primaryColor;
         border-radius: 100%;
     }
@@ -171,8 +165,7 @@ fieldset {
 
     @extend %custominput;
 
-    &:checked+label::after,
-    &:not(:checked)+label::after {
+    &:checked+label::after {
         content: url(../images/check.png);
         top: 0;
         left: -.1035rem;
