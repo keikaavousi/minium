@@ -3,7 +3,7 @@
     margin-right: auto;
     margin-left: auto;
 
-    @media #{$tablet} {
+    @media #{$extraSmall} {
         width: 100%;
     }
 }
@@ -26,25 +26,7 @@
     justify-content: space-between;
 }
 
-%col {
-    flex-grow: 1;
-    max-width: 100%;
-    padding: 15px;
-    min-height: 1px;
-    position: relative;
-}
 
-@mixin colgrid() {
-    @for $i from 1 to 13 {
-        .col-#{$i} {
-            -ms-flex-preferred-size: percentage($i / 12);
-            max-width: percentage($i / 12);
-            flex-basis: percentage($i / 12);
-        }
-    }
-}
-
-@include colgrid;
 
 @mixin grid-generator($size) {
     @for $i from 1 through 12 {
@@ -52,7 +34,11 @@
             -ms-flex-preferred-size: percentage($i / 12);
             max-width: percentage($i / 12);
             flex-basis: percentage($i / 12);
-            @extend %col;
+            flex-grow: 1;
+            max-width: 100%;
+            padding: 15px;
+            min-height: 1px;
+            position: relative;
         }
     }
 }
