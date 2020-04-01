@@ -147,7 +147,7 @@ fieldset {
     }
 }
 
-.customRInp {
+.customradio {
 
     @extend %custominput;
 
@@ -161,7 +161,7 @@ fieldset {
     }
 }
 
-.customCInp {
+.customcheckbox {
 
     @extend %custominput;
 
