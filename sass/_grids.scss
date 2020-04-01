@@ -1,0 +1,91 @@
+.container {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media #{$tablet} {
+        width: 100%;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+%col {
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 15px;
+    min-height: 1px;
+    position: relative;
+}
+
+@mixin colgrid() {
+    @for $i from 1 to 13 {
+        .col-#{$i} {
+            -ms-flex-preferred-size: percentage($i / 12);
+            max-width: percentage($i / 12);
+            flex-basis: percentage($i / 12);
+        }
+    }
+}
+
+@include colgrid;
+
+@mixin grid-generator($size) {
+    @for $i from 1 through 12 {
+        .#{$size}#{$i} {
+            -ms-flex-preferred-size: percentage($i / 12);
+            max-width: percentage($i / 12);
+            flex-basis: percentage($i / 12);
+            @extend %col;
+        }
+    }
+}
+
+//eg:  .x1  .s7  .m12  .l6   .xl3 
+@media #{$extraSmall} {
+    @include grid-generator(x);
+}
+
+@media #{$small} {
+    @include grid-generator(s);
+}
+
+@media #{$medium} {
+    @include grid-generator(m);
+}
+
+@media #{$large} {
+    @include grid-generator(l);
+}
+
+@media #{$extraLarge} {
+    @include grid-generator(xl);
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
