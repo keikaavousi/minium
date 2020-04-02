@@ -1,0 +1,33 @@
+.tooltip {
+    position: relative;
+    &::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        background-color: #000;
+        border-radius: 3px;
+        color: #fff;
+        padding: 5px;
+        font-size: 0.8em;
+        min-width: 130px;
+        text-align: center;
+        display: none;
+    }
+    &::before{
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid black;
+        position: absolute;
+        bottom: -1px;
+        left: 1px;
+        display: none
+    }
+    &:hover {
+        &::after , &::before {
+            display: block;
+        }
+    }
+
+}
