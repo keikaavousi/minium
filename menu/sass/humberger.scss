@@ -11,6 +11,10 @@ $medium: 'only screen and (min-width:768px)';
 $large: 'only screen and (min-width:992px)';
 $extraLarge: 'only screen and (min-width:1200px)';
 
+.open {
+    display: none;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -33,7 +37,24 @@ nav {
         list-style: none;
         display: flex;
         padding: .375rem;
+
         display: none;
+        @media #{$extraSmall} {
+            flex-direction: column;
+            background-color: $primaryColor;
+            top: 70px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            padding: .75rem;
+
+            li {
+                margin-top: .5rem;
+            }
+        }
 
         li {
             padding: .75rem;

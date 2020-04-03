@@ -29,16 +29,20 @@ samp {
 }
 
 pre {
+    width: 100%;
+    border-radius: $borderRadius;
     margin-top: 1.5rem;
     margin-bottom: 0;
     display: inherit;
 }
 
 code {
+    width: 100%;
     background-color: rgba(238, 238, 238, 0.568);
     padding: .5rem;
     width: 100%;
     border: 1px solid #eee;
     border-radius: $borderRadius;
     color: black;
+    overflow: auto;
 }
