@@ -1,5 +1,6 @@
 .tooltip {
     position: relative;
+
     &::after {
         content: attr(data-tooltip);
         position: absolute;
@@ -12,22 +13,25 @@
         text-align: center;
         display: none;
     }
-    &::before{
+
+    &::before {
         content: '';
         width: 0;
         height: 0;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-bottom: 8px solid black;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid black;
         position: absolute;
-        bottom: -1px;
-        left: 1px;
+        bottom: -.07rem;
+        left: .4rem;
         display: none
     }
+
     &:hover {
-        &::after , &::before {
+
+        &::after,
+        &::before {
             display: block;
         }
     }
-
 }

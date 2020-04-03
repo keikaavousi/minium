@@ -3,18 +3,42 @@
     padding: 0;
     box-sizing: border-box;
     color: $primaryColor;
-    font-family: $fontFamily;
-    font-weight: $fontWeight;
     outline-color: $primaryColor;
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
 
     &::selection {
         background: $primaryColor;
         color: #fff;
         text-shadow: none;
     }
+}
+
+body {
+    width: 100%;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+pre {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    display: inherit;
+}
+
+code {
+    background-color: rgba(238, 238, 238, 0.568);
+    padding: .5rem;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: $borderRadius;
+    color: black;
 }
