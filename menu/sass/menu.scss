@@ -11,6 +11,17 @@ $medium: 'only screen and (min-width:768px)';
 $large: 'only screen and (min-width:992px)';
 $extraLarge: 'only screen and (min-width:1200px)';
 
+
+%beforeafter {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: $borderRadius;
+}
+
 * {
     transition: all .4s ease-in-out;
 }
@@ -73,7 +84,7 @@ $extraLarge: 'only screen and (min-width:1200px)';
     }
 
     button {
-        padding: 0 .375rem;
+        padding: 0 8px;
         width: 40px;
         height: 40px;
 
@@ -115,12 +126,88 @@ $extraLarge: 'only screen and (min-width:1200px)';
     }
 }
 
-%beforeafter {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    border-radius: $borderRadius;
+//animation menu
+
+.cros {fopen
+    position: relative;
+
+    @media #{$small} {
+        display: none;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: -27px;
+        right: 0;
+        width: 50px;
+        height: 50px;
+
+        input[type="checkbox"] {
+            display: none;
+
+            &:checked+svg {
+
+                path:nth-child(1),
+                path:nth-child(2) {
+                    --length: 22.627416998;
+                }
+
+                path:nth-child(3),
+                path:nth-child(4) {
+                    --length: 0;
+                    --offset: -20;
+                }
+
+                path:nth-child(5),
+                path:nth-child(6) {
+                    --length: 22.627416998;
+                    --offset: -16.9705627485;
+                }
+
+                path {
+                    transform: translateX(30px);
+                    --offset: -16.9705627485;
+                }
+            }
+        }
+
+        svg {
+            transform: scale(3);
+
+            path:nth-child(1),
+            path:nth-child(2),
+            path:nth-child(5),
+            path:nth-child(6) {
+                --total-length: 111.22813415527344;
+                --offset: -50.22813415527344;
+            }
+
+            path:nth-child(3),
+            path:nth-child(4) {
+                --total-length: 99
+            }
+
+            path:nth-child(1),
+            path:nth-child(3),
+            path:nth-child(5) {
+                opacity: 0;
+                stroke-dasharray: none;
+            }
+
+            path {
+                fill: none;
+                stroke: #ffffff;
+                // stroke-width: 3;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                --length: 24;
+                --offset: -38;
+                stroke-dasharray: var(--length) var(--total-length);
+                stroke-dashoffset: var(--offset);
+                transition: all .5s cubic-bezier(.645, .045, .355, 1);
+            }
+        }
+    }
 }
