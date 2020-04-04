@@ -5,8 +5,8 @@ $fontSize: 1em;
 $fontWeight: 500;
 $primaryColor: #333;
 
-$extraSmall: 'only screen and (max-width:576px)';
-$small: 'only screen and (min-width:576px)';
+$extraSmall: 'only screen and (max-width:768px)';
+$small: 'only screen and (min-width:768px)';
 $medium: 'only screen and (min-width:768px)';
 $large: 'only screen and (min-width:992px)';
 $extraLarge: 'only screen and (min-width:1200px)';
@@ -28,10 +28,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: .5rem 1rem;
-
-    @media #{$extraSmall} {
-        flex-flow: row nowrap;
-    }
 
     .open {
         right: 0;
