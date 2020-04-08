@@ -1,16 +1,7 @@
-$borderRadius: 0.16rem;
-$fontFamily: 'Roboto',
-sans-serif;
-$fontSize: 1em;
-$fontWeight: 500;
 $primaryColor: #333;
-
-$extraSmall: 'only screen and (max-width:768.1px)';
-$small: 'only screen and (min-width:768.1px)';
-$medium: 'only screen and (min-width:768px)';
-$large: 'only screen and (min-width:992px)';
-$extraLarge: 'only screen and (min-width:1200px)';
-
+$borderRadius: 0.16rem;
+$mobile: 'only screen and (max-width:768.1px)';
+$laptop: 'only screen and (min-width:768.1px)';
 
 %beforeafter {
     content: '';
@@ -49,7 +40,7 @@ $extraLarge: 'only screen and (min-width:1200px)';
         display: flex;
         padding: .375rem;
 
-        @media #{$extraSmall} {
+        @media #{$mobile} {
             flex-direction: column;
             background-color: $primaryColor;
             top: 70px;
@@ -88,7 +79,7 @@ $extraLarge: 'only screen and (min-width:1200px)';
         width: 40px;
         height: 40px;
 
-        @media #{$small} {
+        @media #{$laptop} {
             display: none;
         }
 
@@ -127,8 +118,6 @@ $extraLarge: 'only screen and (min-width:1200px)';
 }
 
 //start animation responsive menu
-
-
 label {
     display: block;
     cursor: pointer;
@@ -139,11 +128,11 @@ label {
     height: 50px;
     margin: 0;
 
-    @media #{$small} {
+    @media #{$laptop} {
         display: none;
     }
 
-    input[type="checkbox"] {
+    #menu {
         display: none;
 
         &:checked+svg {
@@ -211,98 +200,169 @@ label {
 }
 
 //end animation responsive menu
-* body {
-    .wrapper {
+
+//start admin sidenav
+.wrapper {
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sideadmin {
         display: flex;
+        flex-direction: column;
+        margin: 0;
+        list-style: none;
 
-        a {
-            text-decoration: none;
-            color: white;
+        width: 7.5rem;
+        min-height: 100vh;
+        background-color: $primaryColor;
+        color: white !important;
+
+        @media #{$laptop} {
+            width: 14rem !important;
         }
 
-        ul {
-            display: flex;
-            flex-direction: column;
+        #brand {
+            text-transform: capitalize;
+            margin: 1.5rem auto;
+
+            img {
+                width: 50px;
+            }
+        }
+
+        hr {
             margin: 0;
-            list-style: none;
-
-            width: 7.5rem;
-            min-height: 100vh;
-            background-color: $primaryColor;
-            color: white !important;
-
-            @media #{$small} {
-                width: 14rem;
-            }
-
-            #brand {
-                text-transform: capitalize;
-                margin: 1.5rem auto;
-
-                img {
-                    width: 50px;
-                }
-            }
-
-            hr {
-                margin: 0;
-            }
-
-            li {
-                margin: 1.5rem auto;
-
-                @media #{$small} {
-                    margin-left: 1.5rem;
-                }
-            }
         }
 
-        .content-wrapper {
+        li {
+            margin: 1.5rem auto;
+
+            @media #{$laptop} {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: calc(100% - 7.5rem);
+        background-color: #f8f9fc;
+
+        @media #{$laptop} {
+            width: calc(100% - 14rem);
+        }
+
+        nav {
+            position: relative;
+            height: 80px;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            width: calc(100% - 7.5rem);
-            background-color: #f8f9fc;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: .5rem 1rem;
+            background-color: white;
+            box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
 
-            @media #{$small} {
-                width: calc(100% - 14rem);
-            }
+            button {
+                padding: 0 .375rem;
 
-            nav {
-                position: relative;
-                height: 80px;
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 1.5rem;
-                padding: .5rem 1rem;
-                background-color: white;
-                box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-
-                button {
-                    padding: 0 .375rem;
-
-                    @media #{$small} {
-                        display: none;
-                    }
+                @media #{$laptop} {
+                    display: none;
                 }
             }
         }
-    }
-
-    .sidetoggle {
-        width: 0 !important;
-        overflow: hidden;
-    }
-
-    .contenttoggle {
-        width: 100% !important;
     }
 }
 
-//start side navigation
+.sidetoggle {
+    width: 0 !important;
+    overflow: hidden;
+}
 
+.contenttoggle {
+    width: 100% !important;
+}
+
+//end admin sidenav
+
+//start side navigation
+.sidenav {
+    height: 100vh;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primaryColor;
+    overflow: hidden;
+    z-index: 999;
+
+    ul {
+        list-style: none;
+        font-size: 24px;
+        height: 100%;
+
+        li {
+            padding: 1.1rem 1.5rem;
+
+            #navclose {
+                float: right;
+                padding: 0 8px;
+
+                svg {
+                    stroke: white;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        li:nth-child(2) {
+            margin-top: 2rem;
+        }
+    }
+}
+
+#navopen {
+    padding: 0 8px;
+    margin-top: 1.6rem;
+}
+
+#main {
+    height: 100vh;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: opacity .3s;
+    z-index: 99;
+}
+
+.overlayed {
+    opacity: .8;
+    width: 100%;
+}
+
+//end side navigation
 
 
 
