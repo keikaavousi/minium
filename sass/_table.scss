@@ -1,0 +1,89 @@
+$tableResponsive: 'only screen and (max-width:992px)';
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.stripe tr {
+    border-bottom: none;
+}
+
+table.stripe tbody tr:nth-child(odd) {
+    // background-color: lighten($primaryColor, 50%);
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+.t-center th,
+.t-center td {
+    text-align: center;
+}
+
+tr {
+    border-bottom: 1px solid $primaryColor;
+}
+
+td,
+th {
+    padding: 1rem .5rem;
+    display: table-cell;
+    text-align: left;
+}
+
+th {
+    text-transform: capitalize;
+}
+
+td {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+@media #{$tableResponsive} {
+    table {
+        width: 100%;
+        display: block;
+        position: relative;
+
+        thead {
+            display: block;
+            float: left;
+
+            th {
+                display: block;
+                text-align: right !important;
+            }
+
+            tr {
+                display: block;
+                padding-right: 10px;
+            }
+        }
+
+        tbody {
+            display: block;
+            width: auto;
+            position: relative;
+            overflow-x: auto;
+            white-space: nowrap;
+
+            tr {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+        td {
+            display: block;
+            min-height: 1.25em;
+            text-align: left;
+            border: none;
+        }
+
+        tr {
+            border-bottom: none;
+            padding: 0 10px;
+        }
+    }
+}
