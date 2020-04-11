@@ -1,0 +1,29 @@
+dl,
+ol,
+ul {
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+li,
+dt,
+dd {
+    margin-bottom: 1rem;
+}
+
+dd {
+    margin-left: 40px;
+}
+
+ul {
+    list-style: circle inside;
+}
+
+ol {
+    list-style: decimal inside;
+}
+
+dl {
+    list-style: none;
+}
