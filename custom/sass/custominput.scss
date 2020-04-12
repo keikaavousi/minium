@@ -164,11 +164,6 @@ $primaryColor: #333;
         opacity: 0;
         transform: scale(0);
     }
-
-    &:checked+label:after {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
 
 .customradio {
@@ -183,6 +178,11 @@ $primaryColor: #333;
         background: $primaryColor;
         border-radius: 100%;
     }
+
+    &:checked+label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .customcheckbox {
@@ -191,7 +191,12 @@ $primaryColor: #333;
 
     &:checked+label::after {
         content: url(../images/check.png);
-        top: 0;
-        left: -.1035rem;
+        top: -1px;
+        left: -1px;
+    }
+
+    &:checked+label:after {
+        opacity: 1;
+        transform: scale(.8);
     }
 }
