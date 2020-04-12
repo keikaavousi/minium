@@ -71,8 +71,8 @@
             <dd>Description list item 1.1</dd>
         </dl>
         <pre>
-        <code>border-left: .2rem solid $primaryColor;</code>
-        <button class="prebtn">
+        <code class="precode">border-left: .2rem solid $primaryColor;</code>
+        <button class="btncopy">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
@@ -80,8 +80,8 @@
         </button>
         </pre>
         <pre>
-            <code>&lt;ul&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ul&sol;&gt;&#10;&#10;&lt;ol&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ol&sol;&gt;&#10;&#10;&lt;dl&gt;&#10;&#9;&lt;dt&gt;Description list item 1&lt;&sol;dt&gt;&#10;&#9;&lt;dd&gt;Description list item 1.1&lt;&sol;dd&gt;&#10;&lt;dl&sol;&gt;</code>
-            <button class="prebtn">
+            <code class="precode">&lt;ul&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ul&sol;&gt;&#10;&#10;&lt;ol&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ol&sol;&gt;&#10;&#10;&lt;dl&gt;&#10;&#9;&lt;dt&gt;Description list item 1&lt;&sol;dt&gt;&#10;&#9;&lt;dd&gt;Description list item 1.1&lt;&sol;dd&gt;&#10;&lt;dl&sol;&gt;</code>
+            <button class="btncopy">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
@@ -89,16 +89,20 @@
             </button>
         </pre>
     </div>
-    <script>
-        let prebutton = document.getElementsByClassName("prebtn");
-        prebutton.addEventListener('click', function () {
-            console.log(prebutton[i].parentElement.children[0].innerText);
-
-        })
-        for (const i in prebutton) {
-            console.log(prebutton[i].parentElement.children[0].innerText);
+   <script>
+        let prebtn = document.getElementsByClassName("btncopy");
+        let precode = document.getElementsByClassName("precode");
+        for (const i in prebtn) {
+            prebtn[i].addEventListener("click",function(){
+                const el = document.createElement('textarea');
+                el.value = precode[i].textContent;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+            });
         }
-    </script>
+   </script>
 </body>
 
 </html>
