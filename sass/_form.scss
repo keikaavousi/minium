@@ -11,7 +11,8 @@ legend {
     margin-bottom: .5rem;
     text-transform: capitalize;
 }
-legend{
+
+legend {
     display: block;
 }
 
@@ -85,91 +86,4 @@ input[type="color"] {
 
 fieldset {
     border: 0;
-}
-
-%custominput {
-
-    position: absolute;
-    opacity: 0;
-
-    &+label {
-        position: relative;
-        padding-left: 28px;
-        cursor: pointer;
-        line-height: 20px;
-        display: inline-block;
-        color: #bbb;
-    }
-
-    &:checked+label {
-        color: $primaryColor;
-    }
-
-    &+label::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 18px;
-        height: 18px;
-        border: 1px solid #bbb;
-        background: white;
-    }
-
-    &:checked+label::before {
-        border-color: $primaryColor;
-    }
-
-    &+label:hover::before {
-        border-color: $primaryColor;
-    }
-
-    &+label:hover {
-        color: $primaryColor;
-    }
-
-    &+label:after {
-        content: '';
-        width: 12px;
-        height: 12px;
-        position: absolute;
-        top: 4px;
-        left: 4px;
-        transition: all 0.2s ease;
-    }
-
-    &:not(:checked)+label:after {
-        opacity: 0;
-        transform: scale(0);
-    }
-
-    &:checked+label:after {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.customradio {
-
-    @extend %custominput;
-
-    &+label:before {
-        border-radius: 100%;
-    }
-
-    &:checked+label:after {
-        background: $primaryColor;
-        border-radius: 100%;
-    }
-}
-
-.customcheckbox {
-
-    @extend %custominput;
-
-    &:checked+label::after {
-        content: url(../images/check.png);
-        top: 0;
-        left: -.1035rem;
-    }
 }
