@@ -8,101 +8,66 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="dist/minimal.min.css">
+    <link rel="stylesheet" href="dist/menu.min.css">
+    <link rel="stylesheet" href="dist/landing.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <a href="#" class="btn">Click Me</a>
-            <button class="btn tooltip" data-tooltip="Hiiiiiiiiii">Click 2</button>
-            <h1 class="tooltip" data-tooltip="Hi">Helllo</h1>
-            <button disabled="disabled">Click Me</button>
-            <button type="reset">Click Me</button>
-            <button type="submit">Click Me</button>
-            <input type="button" value="Click Me">
-            <input type="submit" value="Click Me">
-        </div>
-        <div class="row">
-            <form>
-                <fieldset>
-                    <p>button<input type="button" value="click"></p>
-                    <input type="checkbox" name="" id="">
-                    <p>color<input type="color" name="" id=""></p>
-                    <p>date<input type="date" name="" id=""></p>
-                    <p>datetime<input type="datetime" name="" id=""></p>
-                    <p>datetime-local<input type="datetime-local" name="" id=""></p>
-                    <p>email<input type="email" name="" id=""></p>
-                    <p>file<input type="file" name="" id=""></p>
-                    <p>hidden<input type="hidden" name=""></p>
-                    <p>image<input type="image" src="images/logo.png" alt=""></p>
-                    <p>month<input type="month" name="" id=""></p>
-                    <p>number<input type="number" name="" id=""></p>
-                    <p>password<input type="password" name="" id=""></p>
-                    <p>radio<input type="radio" name="" id=""></p>
-                    <p>range<input type="range" name="" id=""></p>
-                    <p>reset<input type="reset" value="reset"></p>
-                    <p>search<input type="search" name="" id=""></p>
-                    <p>submit<input type="submit" value="submit"></p>
-                    <p>tel<input type="tel" name="" id=""></p>
-                    <p>text<input type="text" name="" id=""></p>
-                    <p>time<input type="time" name="" id=""></p>
-                    <p>url<input type="url" name="" id=""></p>
-                    <p>week<input type="week" name="" id=""></p>
-                    <p>select
-                        <select name="" id="">
-                            <option value="" selected>1</option>
-                            <option value="">2</option>
-                        </select>
-                    </p>
-                    <p>textarea<textarea name="" id="" cols="30" rows="10"></textarea></p>
-                </fieldset>
-            </form>
-        </div>
-        <ul>
-            <li>item</li>
-            <li>item</li>
-        </ul>
-        <ol>
-            <li>item</li>
-            <li>item</li>
-        </ol>
-        <dl>
-            <dt>Description list item 1</dt>
-            <dd>Description list item 1.1</dd>
-        </dl>
-        <pre>
-        <code class="precode">border-left: .2rem solid $primaryColor;</code>
-        <button class="btncopy">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                <rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
-        </button>
-        </pre>
-        <pre>
-            <code class="precode">&lt;ul&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ul&sol;&gt;&#10;&#10;&lt;ol&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ol&sol;&gt;&#10;&#10;&lt;dl&gt;&#10;&#9;&lt;dt&gt;Description list item 1&lt;&sol;dt&gt;&#10;&#9;&lt;dd&gt;Description list item 1.1&lt;&sol;dd&gt;&#10;&lt;dl&sol;&gt;</code>
-            <button class="btncopy">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
-            </button>
-        </pre>
-    </div>
-   <script>
-        let prebtn = document.getElementsByClassName("btncopy");
-        let precode = document.getElementsByClassName("precode");
-        for (const i in prebtn) {
-            prebtn[i].addEventListener("click",function(){
-                const el = document.createElement('textarea');
-                el.value = precode[i].textContent;
-                document.body.appendChild(el);
-                el.select();
-                document.execCommand('copy');
-                document.body.removeChild(el);
-            });
-        }
-   </script>
+    <header>
+        <nav class="hamburger">
+            <a href="#"><img src="../images/logo.png" alt="">MinimalCSS</a>
+            <label for="menu">
+                <input type="checkbox" name="menu" id="menu">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+                    <path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+                    <path d="M0 50h99"></path>
+                    <path d="M0 50h99"></path>
+                    <path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+                    <path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+                </svg>
+            </label>
+            <ul>
+                <li><a href="">Document</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section class="row justify-center items-center" id="home">
+            <img src="images/logo.png" alt="">
+            <h1>MinimalCSS</h1>
+            <p>Ver 1.0</p>
+            <a class="btn" href="#download">Get Started</a>
+        </section>
+        <main class="container">
+            <section class="row items-start" id="download">
+                <h2>Get Started</h2>
+                <a class="btn" href="#">Download MinimalCSS</a>
+                <br>
+                <p>Install with npm</p>
+                <pre>
+                    <code class="precode">$ npm install MinimalCSS</code>
+                    <button class="btncopy">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
+                    </button>
+                    </pre>
+            </section>
+            <section class="row items-start" id="grid">
+                <h2>Grid Layout</h2>
+                <div class="row">
+                    <div class="x12 s1 grid">1</div>
+                    <div class="x12 s11 grid column">11</div>
+                </div>
+            </section>
+        </main>
+   <script src="js/master.js"></script>
+   <script src="custom/js/animationmenu.js"></script>
 </body>
 
 </html>

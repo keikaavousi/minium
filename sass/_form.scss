@@ -5,15 +5,11 @@ fieldset {
     margin-bottom: 1.5rem;
 }
 
-label,
 legend {
+    display: block;
     font-weight: 500;
     margin-bottom: .5rem;
     text-transform: capitalize;
-}
-
-legend {
-    display: block;
 }
 
 input[type="email"],

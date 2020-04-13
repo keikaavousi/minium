@@ -1,0 +1,35 @@
+$primarycolor: #333;
+$firstColor: #b0c4c9;
+$secendColor: #dce3e4;
+$thirdColor: #f8f7f4;
+$forthColor: #41cee2;
+
+
+a:focus,
+button:focus{
+    background-color: $primarycolor;
+    color: $secendColor;
+}
+
+    #home{
+        margin-top: 70px;
+        background-color: $secendColor;
+        height: calc(100vh - 70px);
+    }
+    section{
+        flex-direction: column;
+    }
+main>section{
+    margin-top: 4.5rem;
+    @media only screen and (max-width:576px) {
+        padding: 0 15px;
+    }
+}
+.grid{
+    background-color: $secendColor;
+    max-width: none;
+    text-align: center;
+}
+.column{
+    margin-left: 1%;
+}
