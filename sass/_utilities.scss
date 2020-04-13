@@ -168,7 +168,6 @@ hr {
     }
 }
 
-
 .justify-center {
     display: flex;
     justify-content: center;
@@ -182,4 +181,16 @@ hr {
 .justify-start {
     display: flex;
     justify-content: flex-start;
+}
+
+.items-start{
+    align-items: flex-start;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.items-end{
+    align-items: flex-end;
 }

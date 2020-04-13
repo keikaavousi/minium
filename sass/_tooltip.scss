@@ -4,7 +4,7 @@
     &::after {
         content: attr(data-tooltip);
         position: absolute;
-        background-color: #000;
+        background-color: $primaryColor;
         border-radius: 3px;
         color: #fff;
         padding: 5px;
@@ -20,7 +20,7 @@
         height: 0;
         border-left: 7px solid transparent;
         border-right: 7px solid transparent;
-        border-bottom: 7px solid black;
+        border-bottom: 7px solid $primaryColor;
         position: absolute;
         bottom: -.07rem;
         left: .4rem;
