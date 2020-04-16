@@ -58,7 +58,8 @@ $laptop: 'only screen and (min-width:768.1px)';
 
         li {
             padding: .75rem;
-            @media #{$mobile}{
+
+            @media #{$mobile} {
                 padding: 1.5rem;
             }
         }
@@ -121,11 +122,14 @@ $laptop: 'only screen and (min-width:768.1px)';
 }
 
 //start animation responsive menu
-.hamburger{
-    ul,li{
+.hamburger {
+
+    ul,
+    li {
         margin: 0;
     }
 }
+
 label {
     display: block;
     cursor: pointer;

@@ -31,7 +31,7 @@ samp {
 pre {
     width: 100%;
     border-radius: $borderRadius;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     display: flex;
     position: relative;
 
@@ -46,6 +46,7 @@ pre {
         height: 2.95rem;
         width: 40px;
         padding-left: 7px;
+        transition: .1s all ease-in-out;
 
         svg {
             stroke: lighten($primaryColor, 20%);

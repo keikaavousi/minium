@@ -4,32 +4,101 @@ $secendColor: #dce3e4;
 $thirdColor: #f8f7f4;
 $forthColor: #41cee2;
 
+$small: 'only screen and (max-width:576px)';
+$tableResponsive: 'only screen and (max-width:992px)';
 
 a:focus,
-button:focus{
+button:focus {
     background-color: $primarycolor;
     color: $secendColor;
 }
 
-    #home{
-        margin-top: 70px;
-        background-color: $secendColor;
-        height: calc(100vh - 70px);
-    }
-    section{
-        flex-direction: column;
-    }
-main>section{
+section {
+    flex-direction: column;
+}
+
+main>section {
     margin-top: 4.5rem;
+
     @media only screen and (max-width:576px) {
         padding: 0 15px;
     }
+
+    pre {
+        margin: 2rem 0;
+    }
 }
-.grid{
+
+#home {
+    margin-top: 70px;
     background-color: $secendColor;
-    max-width: none;
-    text-align: center;
+    height: calc(100vh - 70px);
 }
-.column{
-    margin-left: 1%;
+
+#grid {
+    table {
+        span {
+            @media #{$tableResponsive} {
+                display: none;
+            }
+        }
+
+        .tdcolumns {
+            @media #{$tableResponsive} {
+                height: 256px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .grid {
+        background-color: $secendColor;
+        text-align: center;
+        float: left;
+        width: 100%;
+        border-top: .001rem solid $primarycolor;
+    }
+
+    ///577px to 599px
+    .column {
+        border-left: .001rem solid $primarycolor;
+
+        @media #{$small} {
+            border-left: none;
+        }
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+#typo {
+    .typo {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 1.2;
+        }
+    }
+
+    .heading {
+        font-size: 1.2rem;
+
+        code {
+            margin: 0 .2rem;
+            padding: .2rem .5rem;
+            width: unset;
+            border: none;
+        }
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
 }

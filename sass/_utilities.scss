@@ -128,7 +128,7 @@ hr {
     }
 }
 
-@media #{$small}  {
+@media #{$small} {
     .hidden-s {
         display: none !important;
     }
@@ -138,7 +138,7 @@ hr {
     }
 }
 
-@media #{$medium}  {
+@media #{$medium} {
     .hidden-m {
         display: none !important;
     }
@@ -183,14 +183,18 @@ hr {
     justify-content: flex-start;
 }
 
-.items-start{
+.items-start {
     align-items: flex-start;
 }
 
-.items-center{
+.items-center {
     align-items: center;
 }
 
-.items-end{
+.items-end {
     align-items: flex-end;
+}
+
+.border-radius {
+    border-radius: $borderRadius
 }

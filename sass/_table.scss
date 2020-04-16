@@ -12,7 +12,7 @@ table.stripe tr {
 
 table.stripe tbody tr:nth-child(odd) {
     // background-color: lighten($primaryColor, 50%);
-    background-color: rgba(0, 0, 0, 0.137);
+    background-color: $b;
 }
 
 .t-center th,
@@ -28,10 +28,11 @@ td,
 th {
     padding: 1rem .5rem;
     display: table-cell;
-    text-align: left;
+    text-align: center;
 }
 
 th {
+    font-weight: 500;
     text-transform: capitalize;
 }
 
