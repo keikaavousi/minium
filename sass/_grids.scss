@@ -27,7 +27,7 @@
             max-width: percentage($i / 12);
             flex-basis: percentage($i / 12);
             flex-grow: 1;
-            max-width: 100%;
+            // max-width: 100%;
             padding: 15px;
             min-height: 1px;
             position: relative;
@@ -58,6 +58,10 @@
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
 }
 
 .flex-end {

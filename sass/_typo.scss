@@ -9,8 +9,32 @@ h4,
 h5,
 h6 {
     line-height: 2;
-    margin: 15px 0;
-    font-weight: 500
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.5rem;
 }
 
 p {
@@ -28,4 +52,49 @@ label {
 
 a {
     color: $secondaryColor;
+    text-decoration: none;
+}
+
+small {
+    font-size: 80%;
+}
+
+blockquote {
+    width: 100%;
+    background: #f4f5f6;
+    border-radius: $borderRadius;
+    border-left: .2rem solid $primaryColor;
+    font-size: 86%;
+    padding: 1rem 1.75rem 1rem .75rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &::before {
+        content: open-quote;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &::after {
+        position: absolute;
+        font-family: serif;
+        content: close-quote;
+        top: 0;
+        right: 12px;
+        font-size: 6em;
+        color: darkgray;
+        font-style: italic;
+    }
+
+    p {
+        margin: 1rem 1rem 0;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-style: italic;
+        margin: .5rem .75rem 0;
+        text-align: right;
+        color: gray;
+    }
 }
