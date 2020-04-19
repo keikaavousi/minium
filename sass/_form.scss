@@ -26,6 +26,7 @@ select {
     border-radius: $borderRadius;
     color: $primaryColor;
     display: block;
+    font-weight: 400;
     height: 2.375rem;
     margin-bottom: 1rem;
     padding: .375rem .75rem;
@@ -41,6 +42,10 @@ select {
         border-color: $primaryColor;
         outline: none;
     }
+}
+
+textarea {
+    height: unset;
 }
 
 select {
@@ -69,6 +74,7 @@ input[type="month"],
 input[type="week"],
 input[type="time"] {
     padding: .5rem;
+    display: flex;
 }
 
 input[type="range"] {
@@ -78,6 +84,7 @@ input[type="range"] {
 input[type="color"] {
     height: 2.375rem;
     padding: .25rem;
+    width: 3.5rem;
 }
 
 fieldset {

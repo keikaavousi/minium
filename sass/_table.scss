@@ -28,7 +28,7 @@ td,
 th {
     padding: 1rem .5rem;
     display: table-cell;
-    text-align: center;
+    text-align: left;
 }
 
 th {
@@ -59,6 +59,7 @@ td {
             tr {
                 display: block;
                 padding-right: 10px;
+                border-right: 1px solid $primaryColor;
             }
         }
 
@@ -72,6 +73,11 @@ td {
             tr {
                 display: inline-block;
                 vertical-align: top;
+                border-right: 1px solid $primaryColor;
+
+                &:last-child {
+                    border: none;
+                }
             }
         }
 

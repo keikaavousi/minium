@@ -10,10 +10,9 @@
     height: 2.375rem;
 }
 
-input,
-button {
-    &::placeholder {
-        text-transform: capitalize;
+input {
+    ::placeholder {
+        font-family: $fontFamily;
     }
 }
 
