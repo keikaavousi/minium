@@ -7,8 +7,13 @@ $forthColor: #41cee2;
 $small: 'only screen and (max-width:576px)';
 $tableResponsive: 'only screen and (max-width:992px)';
 
+a:focus {
+    text-decoration: underline;
+}
+
 a:focus,
-button:focus {
+button:focus,
+input[type="button"]:focus {
     background-color: $primarycolor;
     color: $secendColor;
 }
@@ -100,5 +105,24 @@ main>section {
 
     :last-child {
         margin-bottom: 0;
+    }
+}
+// #form{
+
+// }
+
+#query {
+    >.row {
+        ul {
+            margin-bottom: 0;
+        }
+    }
+
+    @media #{$small} {
+        >.row {
+            ul {
+                padding: 0 15px;
+            }
+        }
     }
 }

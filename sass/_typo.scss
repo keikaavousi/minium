@@ -15,26 +15,50 @@ h6 {
 
 h1 {
     font-size: 4rem;
+
+    @media #{$extraSmall} {
+        font-size: 3rem;
+    }
 }
 
 h2 {
     font-size: 3.6rem;
+
+    @media #{$extraSmall} {
+        font-size: 2.7rem;
+    }
 }
 
 h3 {
     font-size: 3rem;
+
+    @media #{$extraSmall} {
+        font-size: 2.25rem;
+    }
 }
 
 h4 {
     font-size: 2.4rem;
+
+    @media #{$extraSmall} {
+        font-size: 1.8rem;
+    }
 }
 
 h5 {
     font-size: 1.8rem;
+
+    @media #{$extraSmall} {
+        font-size: 1.35rem;
+    }
 }
 
 h6 {
     font-size: 1.5rem;
+
+    @media #{$extraSmall} {
+        font-size: 1.125rem;
+    }
 }
 
 p {
@@ -48,11 +72,18 @@ label {
     text-transform: capitalize;
     font-weight: 300;
     display: inline-block;
+    margin-bottom: 1rem;
 }
 
 a {
     color: $secondaryColor;
     text-decoration: none;
+    background-color: transparent;
+    border-radius: $borderRadius;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 small {
@@ -89,6 +120,7 @@ blockquote {
     p {
         margin: 1rem 1rem 0;
         font-size: 1rem;
+        overflow-x: auto;
     }
 
     footer {
