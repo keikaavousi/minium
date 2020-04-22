@@ -20,6 +20,14 @@ $tablet:'only screen and (min-width:992px)';
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+
+    @media #{$mobile} {
+        width: 100%;
+    }
+
+    @media #{$phablet} {
+        width: 80%;
+    }
 }
 
 .row {
