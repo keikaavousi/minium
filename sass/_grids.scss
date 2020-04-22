@@ -1,10 +1,18 @@
+$mobile: 'only screen and (max-width:576px)';
+$phablet: 'only screen and (min-width:576px) and (max-width:768px)';
+$tablet:'only screen and (min-width:992px)';
+
 .container {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
 
-    @media #{$extraSmall} {
+    @media #{$mobile} {
         width: 100%;
+    }
+
+    @media #{$phablet} {
+        width: 80%;
     }
 }
 
