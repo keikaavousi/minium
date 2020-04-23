@@ -107,9 +107,18 @@ main>section {
         margin-bottom: 0;
     }
 }
-// #form{
 
-// }
+#form {
+    form {
+        .remember {
+
+            label,
+            input {
+                margin: 0;
+            }
+        }
+    }
+}
 
 #query {
     >.row {

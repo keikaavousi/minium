@@ -34,6 +34,7 @@ select {
     transition-property: color,
         background-color,
         border;
+    font-family: $fontFamily;
     width: 100%;
 
     &:focus {
@@ -46,6 +47,8 @@ select {
 
 textarea {
     height: unset;
+    padding: .75rem;
+    resize: none;
 }
 
 select {

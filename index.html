@@ -259,76 +259,53 @@
 			</section>
 			<section id="form">
 				<h3>Form</h3>
-				<form action="">
-					<fieldset>
-						<div class="row">
-							<div class="x12 s6">
-								<label for="exampleEmail">Email</label>
-								<input type="email" name="exampleEmail" id="" />
-							</div>
-							<div class="x12 s6">
-								<label for="exampleEmail">Email</label>
-								<input type="email" name="exampleEmail" id="" />
+				<form>
+					<div class="row">
+						<div class="x12 s6">
+							<label for="exampleEmail">Email</label>
+							<input type="email" id="exampleEmail" />
+						</div>
+						<div class="x12 s6">
+							<label for="examplePassword">Password</label>
+							<input type="password" id="examplePassword" />
+						</div>
+						<div class="x12 s12">
+							<label for="exampleSelect">Gender</label>
+							<select id="exampleSelect">
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</div>
+						<div class="x12 s12">
+							<label for="exampleArea">Description</label>
+							<textarea id="exampleArea" cols="30" rows="10"></textarea>
+						</div>
+						<div class="x12 s12">
+							<div class="row items-center">
+								<div>
+									<input
+										class="margin-none"
+										type="checkbox"
+										id="exampleCheck"
+									/>
+									<label class="margin-none" for="exampleCheck"
+										>Remember Me</label
+									>
+								</div>
+								<button type="submit">Submit</button>
 							</div>
 						</div>
-					</fieldset>
+					</div>
 				</form>
-				<!-- <form action="">
-					<label for="exampleName">Fullname</label>
-					<input type="text" name="" id="exampleName" />
-					<label for="exampleEmail">Email</label>
-					<input type="email" name="" id="exampleEmail" />
-					<label for="examplePassword">Password</label>
-					<input type="password" name="" id="examplePassword" />
-					<label for="exampleDate">Date</label>
-					<input type="date" name="" id="exampleDate" />
-					<label for="exampleDatetime">Datetime</label>
-					<input type="datetime" name="" id="exampleDatetime" />
-					<label for="exampleDatelocal">Datetime local</label>
-					<input type="datetime-local" name="" id="exampleDatelocal" />
-					<label for="exampleSelect">Job</label>
-					<select name="" id="exampleSelect">
-						<option value="developer">Developer</option>
-						<option value="designer">Designer</option>
-						<option value="custom">Custom...</option>
-					</select>
-					<label for="">Image</label>
-					<br />
-					<input type="file" name="" id="" accept="image/*" />
-					<br />
-					<label for="">Week</label>
-					<input type="week" name="" id="" />
-					<label for="">Month</label>
-					<input type="month" name="" id="" />
-					<br />
-					<label for="">National Code</label>
-					<input type="number" name="" id="" />
-					<label for="">Salary</label>
-					<input type="range" name="" id="" step="100" min="1000" max="10000" />
-					<label for="">Search</label>
-					<input type="search" name="" id="" />
-					<label for="">Number</label>
-					<input type="tel" name="" id="" />
-					<label for="">Website</label>
-					<input type="url" name="" id="" />
-					<label for="">Time</label>
-					<input type="time" name="" id="" />
-					<label for="">Gender</label>
-					<br />
-					<input type="radio" name="" id="" />
-					<label for="">Male</label>
-					<input type="radio" name="" id="" />
-					<label for="">Female</label>
-					<br />
-					<label for="">Favorite Color</label>
-					<br />
-					<input type="color" name="" id="" />
-					<br />
-					<label for="exampleArea">Description</label>
-					<textarea name="" id="exampleArea" rows="10"></textarea>
-					<input type="checkbox" name="" id="exampleCheck" />
-					<label for="exampleCheck">Remember Me?</label>
-				</form> -->
+				<pre>
+        			<code class="precode">&lt;form&gt;&#10;&#9;&lt;div class="row"&gt;&#10;&#9;&#9;&lt;div class="x12 s6"&gt;&#10;&#9;&#9;&#9;&lt;label for="exampleEmail"&gt;Email&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;input type="email" id="exampleEmail"&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s6"&gt;&#10;&#9;&#9;&#9;&lt;label for="examplePassword"&gt;Password&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;input type="password" id="examplePassword"&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s12"&gt;&#10;&#9;&#9;&#9;&lt;label for="exampleSelect"&gt;Gender&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;select id="exampleSelect"&gt;&#10;&#9;&#9;&#9;&#9;&lt;option value="Male"&gt;Male&lt;&sol;option&gt;&#10;&#9;&#9;&#9;&#9;&lt;option value="Female"&gt;Female&sol;option&gt;&#10;&#9;&#9;&#9;&lt;&sol;select&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s12"&gt;&#10;&#9;&#9;&#9;&lt;label for="exampleArea"&gt;Description&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;textarea id="exampleArea" cols="30" rows="10"&gt;&lt;&sol;textarea&gt;&#9;&#9;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s12"&gt;&#10;&#9;&#9;&#9;&lt;div class="row items-center"&gt;&#10;&#9;&#9;&#9;&#9;&lt;div&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;input class="margin-none" type="checkbox" id="exampleCheck"&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;label class="margin-none" for="exampleCheck"&gt;Remember Me&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&#9;&lt;&sol;div&gt;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;&lt;button type="submit"&gt;Submit&lt;&sol;button&gt;&#10;&#9;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#9;&#10;&#9;&lt;&sol;div&gt;&#10;&lt;&sol;form&gt;</code>
+        				<button class="btncopy">
+            			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                		stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                			<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                			<rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
+        				</button>
+        		</pre>
 			</section>
 			<section id="blockquote">
 				<h3>Blockquote</h3>
