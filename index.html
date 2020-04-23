@@ -1,381 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MinimalCss</title>
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-		<link rel="stylesheet" href="dist/minimal.min.css" />
-		<link rel="stylesheet" href="dist/menu.min.css" />
-		<link rel="stylesheet" href="dist/landing.min.css" />
-	</head>
 
-	<body>
-		<header>
-			<nav class="hamburger">
-				<a href="#"><img src="../images/logo.png" alt="" />MinimalCSS</a>
-				<label id="lblmenu" for="menu">
-					<input type="checkbox" name="menu" id="menu" />
-					<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
-						<path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
-						<path d="M0 50h99"></path>
-						<path d="M0 50h99"></path>
-						<path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
-						<path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
-					</svg>
-				</label>
-				<ul>
-					<li><a href="">Document</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href="">Service</a></li>
-					<li><a href="">Link</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section class="row column-direction justify-center items-center" id="home">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="100"
-				height="100"
-				viewBox="0 0 100 100"
-			>
-				<polyline
-					stroke="#333"
-					stroke-width="8"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					points="5,95 5,5 50,75 95,5 95,95"
-					fill="none"
-				/>
-			</svg>
-			<h1>MinimalCSS</h1>
-			<p>Ver 1.0</p>
-			<a class="btn" href="#download">Get Started</a>
-		</section>
-		<main class="container">
-			<section id="download">
-				<h3>Get Started</h3>
-				<a class="btn" class="btn" href="#">Download MinimalCSS</a>
-				<br />
-				<p>Install with npm</p>
-				<pre>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MinimalCss</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+	<link rel="stylesheet" href="dist/minimal.min.css" />
+	<link rel="stylesheet" href="dist/menu.min.css" />
+	<link rel="stylesheet" href="dist/custominput.min.css">
+	<link rel="stylesheet" href="dist/landing.min.css" />
+</head>
+
+<body>
+	<header>
+		<nav class="hamburger">
+			<a href="#"><img src="../images/logo.png" alt="" />MinimalCSS</a>
+			<label id="lblmenu" for="menu">
+				<input type="checkbox" name="menu" id="menu" />
+				<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+					<path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+					<path d="M0 50h99"></path>
+					<path d="M0 50h99"></path>
+					<path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+					<path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+				</svg>
+			</label>
+			<ul>
+				<li><a href="">Document</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">Service</a></li>
+				<li><a href="">Link</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="row column-direction justify-center items-center" id="home">
+		<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+			<polyline stroke="#333" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"
+				points="5,95 5,5 50,75 95,5 95,95" fill="none" />
+		</svg>
+		<h1>MinimalCSS</h1>
+		<p>Ver 1.0</p>
+		<a class="btn" href="#download">Get Started</a>
+	</section>
+	<main class="container">
+		<section id="download">
+			<h3>Get Started</h3>
+			<a class="btn" class="btn" href="#">Download MinimalCSS</a>
+			<br />
+			<p>Install with npm</p>
+			<pre>
                 <code class="precode">$ npm install MinimalCSS</code>
                 <button class="btncopy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
                             <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
                         </svg>
                 </button>
-                </pre>
-			</section>
-			<section id="grid">
-				<h3>Grid Layout</h3>
-				<table class="stripe">
-					<thead>
-						<tr>
-							<th>#</th>
-							<th>extra small<br /><span>&lt;576px</span></th>
-							<th>small<br /><span>&ge;576px</span></th>
-							<th>medium<br /><span>&ge;768px</span></th>
-							<th>large<br /><span>&ge;992px</span></th>
-							<th>extra large<br /><span>&ge;1200px</span></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Class Name</td>
-							<td>x</td>
-							<td>s</td>
-							<td>m</td>
-							<td>l</td>
-							<td>xl</td>
-						</tr>
-						<tr>
-							<td># of columns</td>
-							<td colspan="5" class="tdcolumns">12</td>
-						</tr>
-						<tr>
-							<td>Padding</td>
-							<td colspan="5" class="tdcolumns">15px<span>all sides</span></td>
-						</tr>
-					</tbody>
-				</table>
-				<pre>
+            </pre>
+		</section>
+		<section id="grid">
+			<h3>Grid Layout</h3>
+			<table class="stripe">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>extra small<br /><span>&lt;576px</span></th>
+						<th>small<br /><span>&ge;576px</span></th>
+						<th>medium<br /><span>&ge;768px</span></th>
+						<th>large<br /><span>&ge;992px</span></th>
+						<th>extra large<br /><span>&ge;1200px</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Class Name</td>
+						<td>x</td>
+						<td>s</td>
+						<td>m</td>
+						<td>l</td>
+						<td>xl</td>
+					</tr>
+					<tr>
+						<td># of columns</td>
+						<td colspan="5" class="tdcolumns">12</td>
+					</tr>
+					<tr>
+						<td>Padding</td>
+						<td colspan="5" class="tdcolumns">15px<span>all sides</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<pre>
                 <code class="precode">&lt;div class="container-fluid"&gt;&#10;&#9;&lt;div class="row"&gt;&#10;&#9;&#9;//example&#10;&#9;&#9;&lt;div class="x12 s6 m4 l3 xl1&gt;&lt;&sol;div&gt;&#10;&#9;&lt;&sol;div&gt;&#10;&lt;&sol;div&gt;&#10;&#10;&lt;div class="container"&gt;&#10;&#9;&lt;div class="row"&gt;&#10;&#9;&#9;//example&#10;&#9;&#9;&lt;div class="x12 s6 m4 l3 xl1&gt;&lt;&sol;div&gt;&#10;&#9;&lt;&sol;div&gt;&#10;&lt;&sol;div&gt;&#10;</code>
                 <button class="btncopy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
                             <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
                         </svg>
                 </button>
-                </pre>
-				<div class="row">
-					<div class="x12 s12 grid">12</div>
-					<div class="x12 s1 grid">1</div>
-					<div class="x12 s11 grid column">11</div>
-					<div class="x12 s2 grid">2</div>
-					<div class="x12 s10 grid column">10</div>
-					<div class="x12 s3 grid">3</div>
-					<div class="x12 s9 grid column">9</div>
-					<div class="x12 s4 grid">4</div>
-					<div class="x12 s8 grid column">8</div>
-					<div class="x12 s5 grid">5</div>
-					<div class="x12 s7 grid column">7</div>
-					<div class="x12 s6 grid">6</div>
-					<div class="x12 s6 grid column">6</div>
-					<div class="x12 s7 grid">7</div>
-					<div class="x12 s5 grid column">5</div>
-					<div class="x12 s8 grid">8</div>
-					<div class="x12 s4 grid column">4</div>
-					<div class="x12 s9 grid">9</div>
-					<div class="x12 s3 grid column">3</div>
-					<div class="x12 s10 grid">10</div>
-					<div class="x12 s2 grid column">2</div>
-					<div class="x12 s11 grid">11</div>
-					<div class="x12 s1 grid column">1</div>
-					<div class="x12 s12 grid">12</div>
-				</div>
-				<pre>
+            </pre>
+			<div class="row">
+				<div class="x12 s12 grid">12</div>
+				<div class="x12 s1 grid">1</div>
+				<div class="x12 s11 grid column">11</div>
+				<div class="x12 s2 grid">2</div>
+				<div class="x12 s10 grid column">10</div>
+				<div class="x12 s3 grid">3</div>
+				<div class="x12 s9 grid column">9</div>
+				<div class="x12 s4 grid">4</div>
+				<div class="x12 s8 grid column">8</div>
+				<div class="x12 s5 grid">5</div>
+				<div class="x12 s7 grid column">7</div>
+				<div class="x12 s6 grid">6</div>
+				<div class="x12 s6 grid column">6</div>
+				<div class="x12 s7 grid">7</div>
+				<div class="x12 s5 grid column">5</div>
+				<div class="x12 s8 grid">8</div>
+				<div class="x12 s4 grid column">4</div>
+				<div class="x12 s9 grid">9</div>
+				<div class="x12 s3 grid column">3</div>
+				<div class="x12 s10 grid">10</div>
+				<div class="x12 s2 grid column">2</div>
+				<div class="x12 s11 grid">11</div>
+				<div class="x12 s1 grid column">1</div>
+				<div class="x12 s12 grid">12</div>
+			</div>
+			<pre>
                 <code class="precode">&lt;div class="row"&gt;&#10;&#9;&lt;div class="x12 s12"&gt;12&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s1"&gt;1&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s11"&gt;11&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s2"&gt;2&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s10"&gt;10&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s3"&gt;3&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s9"&gt;9&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s4"&gt;4&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s8"&gt;8&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s5"&gt;5&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s7"&gt;7&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s6"&gt;6&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s6"&gt;6&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s7"&gt;7&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s5"&gt;5&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s8"&gt;8&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s4"&gt;4&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s9"&gt;9&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s3"&gt;3&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s10"&gt;10&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s2"&gt;2&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s11"&gt;11&lt;&sol;div&gt;&#10;&#9;&lt;div class="x12 s1"&gt;1&lt;&sol;div&gt;&#10;&#10;&#9;&lt;div class="x12 s12"&gt;12&lt;&sol;div&gt;&#10;&lt;&sol;div&gt;&#10;</code>
                 <button class="btncopy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
                 </button>
                 </pre>
-			</section>
-			<section id="typo">
-				<h3>Typography</h3>
-				<div class="typo">
-					<h1>
-						Heading 1 <span class="heading"><code>h1</code>4 rem</span>
-					</h1>
-					<h2>
-						Heading 2 <span class="heading"><code>h2</code>3.6 rem</span>
-					</h2>
-					<h3>
-						Heading 3 <span class="heading"><code>h3</code>3 rem</span>
-					</h3>
-					<h4>
-						Heading 4 <span class="heading"><code>h4</code>2.4 rem</span>
-					</h4>
-					<h5>
-						Heading 5 <span class="heading"><code>h5</code>1.8 rem</span>
-					</h5>
-					<h6>
-						Heading 6 <span class="heading"><code>h6</code>1.5 rem</span>
-					</h6>
-				</div>
-				<pre>
+		</section>
+		<section id="typo">
+			<h3>Typography</h3>
+			<div class="typo">
+				<h1>Heading 1 <span class="heading"><code>h1</code>4 rem</span></h1>
+				<h2>Heading 2 <span class="heading"><code>h2</code>3.6 rem</span></h2>
+				<h3>Heading 3 <span class="heading"><code>h3</code>3 rem</span></h3>
+				<h4>Heading 4 <span class="heading"><code>h4</code>2.4 rem</span></h4>
+				<h5>Heading 5 <span class="heading"><code>h5</code>1.8 rem</span></h5>
+				<h6>Heading 6 <span class="heading"><code>h6</code>1.5 rem</span></h6>
+			</div>
+			<pre>
                 <code class="precode">&lt;h1&gt;Heading 1&lt;&sol;h1&gt;&#10;&#10;&lt;h2&gt;Heading 2&lt;&sol;h2&gt;&#10;&#10;&lt;h3&gt;Heading 3&lt;&sol;h3&gt;&#10;&#10;&lt;h4&gt;Heading 4&lt;&sol;h4&gt;&#10;&#10;&lt;h5&gt;Heading 5&lt;&sol;h5&gt;&#10;&#10;&lt;h6&gt;Heading 6&lt;&sol;h6&gt;&#10;&#10;&lt;p&gt;The base type is 17.6px (1.1em) over 1.5 line height&lt;&sol;p&gt;&#10;&#10;&lt;a&gt;Anchor&lt;&sol;a&gt;&#10;&#10;&lt;u&gt;Underline&lt;&sol;u&gt;&#10;&#10;&lt;em&gt;Emphasis&lt;&sol;em&gt;&#10;&#10;&lt;strong&gt;Strong&lt;&sol;strong&gt;&#10;&#10;&lt;small&gt;Small&lt;&sol;small&gt;&#10;</code>
                 <button class="btncopy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
                 </button>
             </pre>
-			</section>
-			<section id="table">
-				<h3>Table</h3>
-				<table>
-					<thead>
-						<tr>
-							<th>#</th>
-							<th>First Name</th>
-							<th>Last Name</th>
-							<th>Job</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Saeed</td>
-							<td>Kefayati</td>
-							<td>Front End Developer</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Mohammad Reza</td>
-							<td>Keikavousi</td>
-							<td>Front End Developer</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Reza</td>
-							<td>Sadeghi</td>
-							<td>Back End Developer</td>
-						</tr>
-					</tbody>
-				</table>
-				<pre>
-                <code class="precode">&lt;table&gt;&#10;&#9;&lt;thead&gt;&#10;&#9;&#9;&lt;tr&gt;&#10;&#9;&#9;&#9;&lt;th&gt;#&lt;&sol;th&gt;&#10;&#9;&#9;&#9;&lt;th&gt;First Name&lt;&sol;th&gt;&#10;&#9;&#9;&#9;&lt;th&gt;Last Name&lt;&sol;th&gt;&#10;&#9;&#9;&#9;&lt;th&gt;Job&lt;&sol;th&gt;&#10;&#9;&#9;&lt;&sol;tr&gt;&#10;&#9;&lt;&sol;thead&gt;&#10;&#9;&lt;tbody&gt;&#10;&#9;&#9;&lt;tr&gt;&#10;&#9;&#9;&#9;&lt;td&gt;1&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Saeed&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Kefayati&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Front End Developer&lt;&sol;td&gt;&#10;&#9;&#9;&lt;&sol;tr&gt;&#10;&#9;&#9;&lt;tr&gt;&#10;&#9;&#9;&#9;&lt;td&gt;2&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Mohammad Reza&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Keikavousi&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Front End Developer&lt;&sol;td&gt;&#10;&#9;&#9;&lt;&sol;tr&gt;&#10;&#9;&#9;&lt;tr&gt;&#10;&#9;&#9;&#9;&lt;td&gt;3&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Reza&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Sadeghi&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Back End Developer&lt;&sol;td&gt;&#10;&#9;&#9;&lt;&sol;tr&gt;&#10;&#9;&lt;&sol;tbody&gt;&#10;&lt;&sol;table&gt;
-                </code>
+		</section>
+		<section id="table">
+			<h3>Table</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Job</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Saeed</td>
+						<td>Kefayati</td>
+						<td>Front End Developer</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Mohammad Reza</td>
+						<td>Keikavousi</td>
+						<td>Front End Developer</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Reza</td>
+						<td>Sadeghi</td>
+						<td>Back End Developer</td>
+					</tr>
+				</tbody>
+			</table>
+			<pre>
+                <code class="precode">&lt;table&gt;&#10;&#9;&lt;thead&gt;&#10;&#9;&#9;&lt;tr&gt;&#10;&#9;&#9;&#9;&lt;th&gt;#&lt;&sol;th&gt;&#10;&#9;&#9;&#9;&lt;th&gt;First Name&lt;&sol;th&gt;&#10;&#9;&#9;&#9;&lt;th&gt;Last Name&lt;&sol;th&gt;&#10;&#9;&#9;&#9;&lt;th&gt;Job&lt;&sol;th&gt;&#10;&#9;&#9;&lt;&sol;tr&gt;&#10;&#9;&lt;&sol;thead&gt;&#10;&#9;&lt;tbody&gt;&#10;&#9;&#9;&lt;tr&gt;&#10;&#9;&#9;&#9;&lt;td&gt;1&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Saeed&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Kefayati&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Front End Developer&lt;&sol;td&gt;&#10;&#9;&#9;&lt;&sol;tr&gt;&#10;&#9;&#9;&lt;tr&gt;&#10;&#9;&#9;&#9;&lt;td&gt;2&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Mohammad Reza&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Keikavousi&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Front End Developer&lt;&sol;td&gt;&#10;&#9;&#9;&lt;&sol;tr&gt;&#10;&#9;&#9;&lt;tr&gt;&#10;&#9;&#9;&#9;&lt;td&gt;3&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Reza&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Sadeghi&lt;&sol;td&gt;&#10;&#9;&#9;&#9;&lt;td&gt;Back End Developer&lt;&sol;td&gt;&#10;&#9;&#9;&lt;&sol;tr&gt;&#10;&#9;&lt;&sol;tbody&gt;&#10;&lt;&sol;table&gt;</code>
                 <button class="btncopy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
                 </button>
             </pre>
-			</section>
-			<section id="button">
-				<h3>Button</h3>
-				<div class="row">
-					<div>
-						<a class="btn" href="#">Anchor Button</a>
-						<button>Button Element</button>
-						<input type="submit" value="Submit Input" />
-						<input type="button" value="Button Input" />
-						<button disabled>Disable</button>
-					</div>
+		</section>
+		<section id="button">
+			<h3>Button</h3>
+			<div class="row">
+				<div>
+					<a class="btn" href="#">Anchor Button</a>
+					<button>Button Element</button>
+					<input type="submit" value="Submit Input" />
+					<input type="button" value="Button Input" />
+					<button disabled>Disable</button>
 				</div>
-				<pre>
+			</div>
+			<pre>
                 <code class="precode">&lt;a class="btn" href="#"&gt;Anchor Button&lt;&sol;a&gt;&#10;&#10;&lt;button&gt;Button Element&lt;&sol;button&gt;&#10;&#10;&lt;input type="submit" value="Submit Input"&sol;&gt;&#10;&#10;&lt;input type="button" value="Button Input"&sol;&gt;&#10;&#10;&lt;button disabled&gt;Disable&lt;&sol;button&gt;&#10;</code>
                 <button class="btncopy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
                 </button>
-                </pre>
-			</section>
-			<section id="form">
-				<h3>Form</h3>
-				<form>
-					<div class="row">
-						<div class="x12 s6">
-							<label for="exampleEmail">Email</label>
-							<input type="email" id="exampleEmail" />
-						</div>
-						<div class="x12 s6">
-							<label for="examplePassword">Password</label>
-							<input type="password" id="examplePassword" />
-						</div>
-						<div class="x12 s12">
-							<label for="exampleSelect">Gender</label>
-							<select id="exampleSelect">
-								<option value="Male">Male</option>
-								<option value="Female">Female</option>
-							</select>
-						</div>
-						<div class="x12 s12">
-							<label for="exampleArea">Description</label>
-							<textarea id="exampleArea" cols="30" rows="10"></textarea>
-						</div>
-						<div class="x12 s12">
-							<div class="row items-center">
-								<div>
-									<input
-										class="margin-none"
-										type="checkbox"
-										id="exampleCheck"
-									/>
-									<label class="margin-none" for="exampleCheck"
-										>Remember Me</label
-									>
-								</div>
-								<button type="submit">Submit</button>
+            </pre>
+		</section>
+		<section id="form">
+			<h3>Form</h3>
+			<form>
+				<div class="row">
+					<div class="x12 s6">
+						<label for="exampleEmail">Email</label>
+						<input type="email" id="exampleEmail" />
+					</div>
+					<div class="x12 s6">
+						<label for="examplePassword">Password</label>
+						<input type="password" id="examplePassword" />
+					</div>
+					<div class="x12 s12">
+						<label for="exampleSelect">Gender</label>
+						<select id="exampleSelect">
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+						</select>
+					</div>
+					<div class="x12 s12">
+						<label for="exampleArea">Description</label>
+						<textarea id="exampleArea" cols="30" rows="10"></textarea>
+					</div>
+					<div class="x12 s12">
+						<div class="row items-center">
+							<div>
+								<input class="margin-none" type="checkbox" id="exampleCheck" />
+								<label class="margin-none" for="exampleCheck">Remember Me</label>
 							</div>
+							<button type="submit">Submit</button>
 						</div>
 					</div>
-				</form>
-				<pre>
-        			<code class="precode">&lt;form&gt;&#10;&#9;&lt;div class="row"&gt;&#10;&#9;&#9;&lt;div class="x12 s6"&gt;&#10;&#9;&#9;&#9;&lt;label for="exampleEmail"&gt;Email&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;input type="email" id="exampleEmail"&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s6"&gt;&#10;&#9;&#9;&#9;&lt;label for="examplePassword"&gt;Password&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;input type="password" id="examplePassword"&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s12"&gt;&#10;&#9;&#9;&#9;&lt;label for="exampleSelect"&gt;Gender&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;select id="exampleSelect"&gt;&#10;&#9;&#9;&#9;&#9;&lt;option value="Male"&gt;Male&lt;&sol;option&gt;&#10;&#9;&#9;&#9;&#9;&lt;option value="Female"&gt;Female&sol;option&gt;&#10;&#9;&#9;&#9;&lt;&sol;select&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s12"&gt;&#10;&#9;&#9;&#9;&lt;label for="exampleArea"&gt;Description&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;textarea id="exampleArea" cols="30" rows="10"&gt;&lt;&sol;textarea&gt;&#9;&#9;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s12"&gt;&#10;&#9;&#9;&#9;&lt;div class="row items-center"&gt;&#10;&#9;&#9;&#9;&#9;&lt;div&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;input class="margin-none" type="checkbox" id="exampleCheck"&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;label class="margin-none" for="exampleCheck"&gt;Remember Me&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&#9;&lt;&sol;div&gt;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;&lt;button type="submit"&gt;Submit&lt;&sol;button&gt;&#10;&#9;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#9;&#10;&#9;&lt;&sol;div&gt;&#10;&lt;&sol;form&gt;</code>
-        				<button class="btncopy">
-            			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                		stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                			<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                			<rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
-        				</button>
-        		</pre>
-			</section>
-			<section id="blockquote">
-				<h3>Blockquote</h3>
-				<blockquote>
-					<p>Talk is cheap. Show me the code.</p>
-					<footer>Linus Torvalds</footer>
-				</blockquote>
-				<pre>
+				</div>
+			</form>
+			<pre>
+        		<code class="precode">&lt;form&gt;&#10;&#9;&lt;div class="row"&gt;&#10;&#9;&#9;&lt;div class="x12 s6"&gt;&#10;&#9;&#9;&#9;&lt;label for="exampleEmail"&gt;Email&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;input type="email" id="exampleEmail"&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s6"&gt;&#10;&#9;&#9;&#9;&lt;label for="examplePassword"&gt;Password&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;input type="password" id="examplePassword"&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s12"&gt;&#10;&#9;&#9;&#9;&lt;label for="exampleSelect"&gt;Gender&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;select id="exampleSelect"&gt;&#10;&#9;&#9;&#9;&#9;&lt;option value="Male"&gt;Male&lt;&sol;option&gt;&#10;&#9;&#9;&#9;&#9;&lt;option value="Female"&gt;Female&sol;option&gt;&#10;&#9;&#9;&#9;&lt;&sol;select&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s12"&gt;&#10;&#9;&#9;&#9;&lt;label for="exampleArea"&gt;Description&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&lt;textarea id="exampleArea" cols="30" rows="10"&gt;&lt;&sol;textarea&gt;&#9;&#9;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;div class="x12 s12"&gt;&#10;&#9;&#9;&#9;&lt;div class="row items-center"&gt;&#10;&#9;&#9;&#9;&#9;&lt;div&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;input class="margin-none" type="checkbox" id="exampleCheck"&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;label class="margin-none" for="exampleCheck"&gt;Remember Me&lt;&sol;label&gt;&#10;&#9;&#9;&#9;&#9;&lt;&sol;div&gt;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;&lt;button type="submit"&gt;Submit&lt;&sol;button&gt;&#10;&#9;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#9;&#10;&#9;&lt;&sol;div&gt;&#10;&lt;&sol;form&gt;</code>
+        			<button class="btncopy">
+            		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                		<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                		<rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
+        		</button>
+        	</pre>
+		</section>
+		<section id="custom">
+			<h3>Custom Input</h3>
+			<p class="warning">You should import "custominput.css" to your file.</p>
+			<br />
+			<p>Custom Checkbox :</p>
+			<input type="checkbox" class="customcheckbox" id="Excheckbox">
+			<label for="Excheckbox">Enter</label>
+			<p>Custom Radio button :</p>
+			<input type="radio" class="customradio" id="Exradio">
+			<label for="Exradio">Enter</label>
+			<p>Custom Range :</p>
+			<input type="range" class="customrange" id="Exrange">
+			<p>Custom Toggle Button :</p>
+			<input type="checkbox" class="togglebtn" id="Extoggle">
+			<label for="Extoggle">
+				<span></span>
+			</label>
+			<pre>
+			    <code class="precode">//Custom Checkbox&#10;&lt;input type="checkbox" class="customcheckbox" id="Excheckbox"&gt;&#10;&lt;label for="Excheckbox"&gt;Enter&lt;&sol;label&gt;&#10;&#10;//Custom Radio Button&#10;&lt;input type="radio" class="customradio" id="Exradio"&gt;&#10;&lt;label for="Exradio"&gt;Enter&lt;&sol;label&gt;&#10;&#10;//Custom Range&#10;&lt;input type="range" class="customrange" id="Exrange"&gt;&#10;&#10;//Custom Toggle Button&#10;&lt;input type="checkbox" class="togglebtn" id="Extoggle"&gt;&#10;&lt;label for="Extoggle"&gt;&#10;&#9;&lt;span&gt;&lt;&sol;span&gt;&#10;&lt;&sol;label&gt;</code>
+			    <button class="btncopy">
+			        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+			            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
+			    </button>
+			</pre>
+		</section>
+		<section id="blockquote">
+			<h3>Blockquote</h3>
+			<blockquote>
+				<p>Talk is cheap. Show me the code.</p>
+				<footer>Linus Torvalds</footer>
+			</blockquote>
+			<pre>
                 <code class="precode">&lt;blockquote&gt;&#10;&#9;&lt;p&gt;Stay hungry, stay foolish.&lt;&sol;p&gt;&#10;&#9;&lt;footer&gt;Steve Jobs&lt;&sol;footer&gt;&#10;&lt;&sol;blockquote&gt;</code>
                 <button class="btncopy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
                 </button>
-                </pre>
-			</section>
-			<section id="list">
-				<h3>List</h3>
-				<div>
-					<ul>
-						<li>item</li>
-						<li>item</li>
-					</ul>
-					<ol>
-						<li>item</li>
-						<li>item</li>
-					</ol>
-					<dl>
-						<dt>Description list item 1</dt>
-						<dd>Description list item 1.1</dd>
-					</dl>
-				</div>
-				<pre>
-            <code class="precode">&lt;ul&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ul&sol;&gt;&#10;&#10;&lt;ol&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ol&sol;&gt;&#10;&#10;&lt;dl&gt;&#10;&#9;&lt;dt&gt;Description list item 1&lt;&sol;dt&gt;&#10;&#9;&lt;dd&gt;Description list item 1.1&lt;&sol;dd&gt;&#10;&lt;dl&sol;&gt;</code>
-            <button class="btncopy">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
-            </button>
-        </pre>
-			</section>
-			<section id="query">
-				<h3>Media Queries</h3>
-				<div class="row">
-					<ul class="x12 s6">
-						<li>Mobile</li>
-						<li>Phablet</li>
-						<li>Tablet</li>
-					</ul>
-					<ul class="x12 s6">
-						<li>Desktop</li>
-						<li>Desktop HD</li>
-					</ul>
-				</div>
-				<pre>
-                    <code class="precode">//Mobile&#10;@media only screen and (max-width:576px){}&#10;&#10;//Phablet&#10;@media only screen and (min-width:576px){}&#10;&#10;//Tablet&#10;@media only screen and (min-width:768px){}&#10;&#10;//Desktop&#10;@media only screen and (min-width:992px){}&#10;&#10;//Desktop HD&#10;@media only screen and (min-width:1200px){}&#10;</code>
-                    <button class="btncopy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                        </svg>
-                    </button>
-                </pre>
-			</section>
-		</main>
-		<script src="js/master.js"></script>
-		<script src="custom/js/animationmenu.js"></script>
-	</body>
+            </pre>
+		</section>
+		<section id="list">
+			<h3>List</h3>
+			<div>
+				<ul>
+					<li>item</li>
+					<li>item</li>
+				</ul>
+				<ol>
+					<li>item</li>
+					<li>item</li>
+				</ol>
+				<dl>
+					<dt>Description list item 1</dt>
+					<dd>Description list item 1.1</dd>
+				</dl>
+			</div>
+			<pre>
+            	<code class="precode">&lt;ul&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ul&sol;&gt;&#10;&#10;&lt;ol&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ol&sol;&gt;&#10;&#10;&lt;dl&gt;&#10;&#9;&lt;dt&gt;Description list item 1&lt;&sol;dt&gt;&#10;&#9;&lt;dd&gt;Description list item 1.1&lt;&sol;dd&gt;&#10;&lt;dl&sol;&gt;</code>
+            	<button class="btncopy">
+	                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    	<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                    	<rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
+            	</button>
+        	</pre>
+		</section>
+		<section id="utility">
+			<h3>Utility</h3>
+			<pre>
+                <code class="precode">//Utility Class List&#10;&#10;//shadow&#10;.shadow&#10;&#10;//text align&#10;.center-align&#10;.left-align&#10;.right-align&#10;.justify-align</code>
+                <button class="btncopy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
+                </button>
+            </pre>
+		</section>
+		<section id="query">
+			<h3>Media Queries</h3>
+			<div class="row">
+				<ul class="x12 s6">
+					<li>Mobile</li>
+					<li>Phablet</li>
+					<li>Tablet</li>
+				</ul>
+				<ul class="x12 s6">
+					<li>Desktop</li>
+					<li>Desktop HD</li>
+				</ul>
+			</div>
+			<pre>
+                <code class="precode">//Mobile&#10;@media only screen and (max-width:576px){}&#10;&#10;//Phablet&#10;@media only screen and (min-width:576px){}&#10;&#10;//Tablet&#10;@media only screen and (min-width:768px){}&#10;&#10;//Desktop&#10;@media only screen and (min-width:992px){}&#10;&#10;//Desktop HD&#10;@media only screen and (min-width:1200px){}&#10;</code>
+                <button class="btncopy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
+                </button>
+            </pre>
+		</section>
+	</main>
+	<footer id="footer" class="center-align">
+		<p>Made By <a href="https://keikaavousi.com/" target="_blank">Keikaavousi</a> & <a
+				href="http://saeedkefayati.com/" target="_blank">Kefayati</a></p>
+		<a class="btn" href="#">Donate Us</a>
+	</footer>
+	<script src="js/master.js"></script>
+	<script src="custom/js/animationmenu.js"></script>
+</body>
+
 </html>

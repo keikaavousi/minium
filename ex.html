@@ -1,155 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>MinimalCss</title>
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-		<link rel="stylesheet" href="dist/minimal.min.css" />
-	</head>
 
-	<body>
-		<div class="container">
-			<div class="row">
-				<a href="#" class="btn">Click Me</a>
-				<button class="btn tooltip" data-tooltip="Hiiiiiiiiii">Click 2</button>
-				<h1 class="tooltip" data-tooltip="Hi">Helllo</h1>
-				<button disabled="disabled">Click Me</button>
-				<button type="reset">Click Me</button>
-				<button type="submit">Click Me</button>
-				<input type="button" value="Click Me" />
-				<input type="submit" value="Click Me" />
-			</div>
-			<div class="row">
-				<form>
-					<fieldset>
-						<p>button<input type="button" value="click" /></p>
-						<input type="checkbox" name="" id="" />
-						<p>color<input type="color" name="" id="" /></p>
-						<p>date<input type="date" name="" id="" /></p>
-						<p>datetime<input type="datetime" name="" id="" /></p>
-						<p>datetime-local<input type="datetime-local" name="" id="" /></p>
-						<p>email<input type="email" name="" id="" /></p>
-						<p>file<input type="file" name="" id="" /></p>
-						<p>hidden<input type="hidden" name="" /></p>
-						<p>image<input type="image" src="images/logo.png" alt="" /></p>
-						<p>month<input type="month" name="" id="" /></p>
-						<p>number<input type="number" name="" id="" /></p>
-						<p>password<input type="password" name="" id="" /></p>
-						<p>radio<input type="radio" name="" id="" /></p>
-						<p>range<input type="range" name="" id="" /></p>
-						<p>reset<input type="reset" value="reset" /></p>
-						<p>search<input type="search" name="" id="" /></p>
-						<p>submit<input type="submit" value="submit" /></p>
-						<p>tel<input type="tel" name="" id="" /></p>
-						<p>text<input type="text" name="" id="" /></p>
-						<p>time<input type="time" name="" id="" /></p>
-						<p>url<input type="url" name="" id="" /></p>
-						<p>week<input type="week" name="" id="" /></p>
-						<p>
-							select
-							<select name="" id="">
-								<option value="" selected>1</option>
-								<option value="">2</option>
-							</select>
-						</p>
-						<p>
-							textarea<textarea name="" id="" cols="30" rows="10"></textarea>
-						</p>
-					</fieldset>
-				</form>
-				<!-- <form action="">
-					<label for="exampleName">Fullname</label>
-					<input type="text" name="" id="exampleName" />
-					<label for="exampleEmail">Email</label>
-					<input type="email" name="" id="exampleEmail" />
-					<label for="examplePassword">Password</label>
-					<input type="password" name="" id="examplePassword" />
-					<label for="exampleDate">Date</label>
-					<input type="date" name="" id="exampleDate" />
-					<label for="exampleDatetime">Datetime</label>
-					<input type="datetime" name="" id="exampleDatetime" />
-					<label for="exampleDatelocal">Datetime local</label>
-					<input type="datetime-local" name="" id="exampleDatelocal" />
-					<label for="exampleSelect">Job</label>
-					<select name="" id="exampleSelect">
-						<option value="developer">Developer</option>
-						<option value="designer">Designer</option>
-						<option value="custom">Custom...</option>
-					</select>
-					<label for="">Image</label>
-					<br />
-					<input type="file" name="" id="" accept="image/*" />
-					<br />
-					<label for="">Week</label>
-					<input type="week" name="" id="" />
-					<label for="">Month</label>
-					<input type="month" name="" id="" />
-					<br />
-					<label for="">National Code</label>
-					<input type="number" name="" id="" />
-					<label for="">Salary</label>
-					<input type="range" name="" id="" step="100" min="1000" max="10000" />
-					<label for="">Search</label>
-					<input type="search" name="" id="" />
-					<label for="">Number</label>
-					<input type="tel" name="" id="" />
-					<label for="">Website</label>
-					<input type="url" name="" id="" />
-					<label for="">Time</label>
-					<input type="time" name="" id="" />
-					<label for="">Gender</label>
-					<br />
-					<input type="radio" name="" id="" />
-					<label for="">Male</label>
-					<input type="radio" name="" id="" />
-					<label for="">Female</label>
-					<br />
-					<label for="">Favorite Color</label>
-					<br />
-					<input type="color" name="" id="" />
-					<br />
-					<label for="exampleArea">Description</label>
-					<textarea name="" id="exampleArea" rows="10"></textarea>
-					<input type="checkbox" name="" id="exampleCheck" />
-					<label for="exampleCheck">Remember Me?</label>
-				</form> -->
-			</div>
-			<ul>
-				<li>item</li>
-				<li>item</li>
-			</ul>
-			<ol>
-				<li>item</li>
-				<li>item</li>
-			</ol>
-			<dl>
-				<dt>Description list item 1</dt>
-				<dd>Description list item 1.1</dd>
-			</dl>
-			<pre>
-        <code class="precode">border-left: .2rem solid $primaryColor;</code>
-        <button class="btncopy">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                <rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
-        </button>
-        </pre>
-			<pre>
-            <code class="precode">&lt;ul&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ul&sol;&gt;&#10;&#10;&lt;ol&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&#9;&lt;li&gt;item&lt;&sol;li&gt;&#10;&lt;ol&sol;&gt;&#10;&#10;&lt;dl&gt;&#10;&#9;&lt;dt&gt;Description list item 1&lt;&sol;dt&gt;&#10;&#9;&lt;dd&gt;Description list item 1.1&lt;&sol;dd&gt;&#10;&lt;dl&sol;&gt;</code>
-            <button class="btncopy">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1" /></svg>
-            </button>
-        </pre>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MinimalCss</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap" rel="stylesheet" />
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+	<link rel="stylesheet" href="dist/minimal.min.css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<a href="#" class="btn">Click Me</a>
+			<button class="btn tooltip" data-tooltip="Hiiiiiiiiii">Click 2</button>
+			<h1 class="tooltip" data-tooltip="Hi">Helllo</h1>
+			<button disabled="disabled">Click Me</button>
+			<button type="reset">Click Me</button>
+			<button type="submit">Click Me</button>
+			<input type="button" value="Click Me" />
+			<input type="submit" value="Click Me" />
 		</div>
-		<script src="js/master.js"></script>
-	</body>
+		<div class="row">
+			<form action="">
+				<label for="exampleName">Fullname</label>
+				<input type="text" name="" id="exampleName" />
+				<label for="exampleEmail">Email</label>
+				<input type="email" name="" id="exampleEmail" />
+				<label for="examplePassword">Password</label>
+				<input type="password" name="" id="examplePassword" />
+				<label for="exampleDate">Date</label>
+				<input type="date" name="" id="exampleDate" />
+				<label for="exampleDatetime">Datetime</label>
+				<input type="datetime" name="" id="exampleDatetime" />
+				<label for="exampleDatelocal">Datetime local</label>
+				<input type="datetime-local" name="" id="exampleDatelocal" />
+				<label for="exampleSelect">Job</label>
+				<select name="" id="exampleSelect">
+					<option value="developer">Developer</option>
+					<option value="designer">Designer</option>
+					<option value="custom">Custom...</option>
+				</select>
+				<label for="">Image</label>
+				<br />
+				<input type="file" name="" id="" accept="image/*" />
+				<br />
+				<label for="">Week</label>
+				<input type="week" name="" id="" />
+				<label for="">Month</label>
+				<input type="month" name="" id="" />
+				<br />
+				<label for="">National Code</label>
+				<input type="number" name="" id="" />
+				<label for="">Salary</label>
+				<input type="range" name="" id="" step="100" min="1000" max="10000" />
+				<label for="">Search</label>
+				<input type="search" name="" id="" />
+				<label for="">Number</label>
+				<input type="tel" name="" id="" />
+				<label for="">Website</label>
+				<input type="url" name="" id="" />
+				<label for="">Time</label>
+				<input type="time" name="" id="" />
+				<label for="">Gender</label>
+				<br />
+				<input type="radio" name="" id="" />
+				<label for="">Male</label>
+				<input type="radio" name="" id="" />
+				<label for="">Female</label>
+				<br />
+				<label for="">Favorite Color</label>
+				<br />
+				<input type="color" name="" id="" />
+				<br />
+				<label for="exampleArea">Description</label>
+				<textarea name="" id="exampleArea" rows="10"></textarea>
+				<input type="checkbox" name="" id="exampleCheck" />
+				<label for="exampleCheck">Remember Me?</label>
+			</form>
+		</div>
+	</div>
+	<script src="js/master.js"></script>
+</body>
+
 </html>

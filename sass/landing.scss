@@ -18,10 +18,6 @@ input[type="button"]:focus {
     color: $secendColor;
 }
 
-// section {
-//     flex-direction: column;
-// }
-
 main>section {
     margin-top: 4.5rem;
 
@@ -65,7 +61,6 @@ main>section {
         border-top: .001rem solid $primarycolor;
     }
 
-    ///577px to 599px
     .column {
         border-left: .001rem solid $primarycolor;
 
@@ -134,4 +129,19 @@ main>section {
             }
         }
     }
+}
+
+#footer {
+    background-color: $primarycolor;
+    padding: .75rem;
+    margin-top: 4rem;
+
+    * {
+        color: white !important;
+    }
+
+}
+
+.warning {
+    color: red;
 }

@@ -191,8 +191,8 @@ $primaryColor: #333;
 
     &:checked+label::after {
         content: url(../images/check.png);
-        top: -1px;
-        left: -1px;
+        top: -.05rem;
+        left: -.05rem;
     }
 
     &:checked+label:after {
