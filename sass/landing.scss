@@ -1,8 +1,5 @@
 $primarycolor: #333;
-$firstColor: #b0c4c9;
 $secendColor: #dce3e4;
-$thirdColor: #f8f7f4;
-$forthColor: #41cee2;
 
 $small: 'only screen and (max-width:576px)';
 $tableResponsive: 'only screen and (max-width:992px)';
@@ -11,23 +8,12 @@ a:focus {
     text-decoration: underline;
 }
 
-a:focus,
+a:hover,
 button:focus,
-input[type="button"]:focus {
+input[type="button"]:focus,
+input[type="submit"]:focus {
     background-color: $primarycolor;
     color: $secendColor;
-}
-
-main>section {
-    margin-top: 4.5rem;
-
-    @media only screen and (max-width:576px) {
-        padding: 0 15px;
-    }
-
-    pre {
-        margin: 2rem 0;
-    }
 }
 
 #home {
@@ -68,10 +54,6 @@ main>section {
             border-left: none;
         }
     }
-
-    :last-child {
-        margin-bottom: 0;
-    }
 }
 
 #typo {
@@ -88,7 +70,7 @@ main>section {
     }
 
     .heading {
-        font-size: 1.2rem;
+        font-size: 1rem;
 
         code {
             margin: 0 .2rem;
@@ -97,31 +79,9 @@ main>section {
             border: none;
         }
     }
-
-    :last-child {
-        margin-bottom: 0;
-    }
-}
-
-#form {
-    form {
-        .remember {
-
-            label,
-            input {
-                margin: 0;
-            }
-        }
-    }
 }
 
 #query {
-    >.row {
-        ul {
-            margin-bottom: 0;
-        }
-    }
-
     @media #{$small} {
         >.row {
             ul {
@@ -134,10 +94,15 @@ main>section {
 #footer {
     background-color: $primarycolor;
     padding: .75rem;
-    margin-top: 4rem;
 
-    * {
-        color: white !important;
+    a:hover {
+        background-color: white;
+        color: $primarycolor !important;
+    }
+
+    a,
+    p {
+        color: white;
     }
 
 }

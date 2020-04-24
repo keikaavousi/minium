@@ -17,7 +17,7 @@
 <body>
 	<header>
 		<nav class="hamburger">
-			<a href="#"><img src="../images/logo.png" alt="" />MinimalCSS</a>
+			<a class="active brand" href="#"><img src="../images/logo.png" alt="" />MinimalCSS</a>
 			<label id="lblmenu" for="menu">
 				<input type="checkbox" name="menu" id="menu" />
 				<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -30,8 +30,8 @@
 				</svg>
 			</label>
 			<ul>
-				<li><a href="">Document</a></li>
-				<li><a href="">About</a></li>
+				<li><a href="#download">Get Started</a></li>
+				<li><a href="#grid">Document</a></li>
 				<li><a href="">Contact</a></li>
 				<li><a href="">Service</a></li>
 				<li><a href="">Link</a></li>
@@ -48,7 +48,7 @@
 		<a class="btn" href="#download">Get Started</a>
 	</section>
 	<main class="container">
-		<section id="download">
+		<section class="margin-top-l" id="download">
 			<h3>Get Started</h3>
 			<a class="btn" class="btn" href="#">Download MinimalCSS</a>
 			<br />
@@ -63,9 +63,9 @@
                 </button>
             </pre>
 		</section>
-		<section id="grid">
+		<section class="margin-top-l" id="grid">
 			<h3>Grid Layout</h3>
-			<table class="stripe">
+			<table class="stripe table-center">
 				<thead>
 					<tr>
 						<th>#</th>
@@ -140,7 +140,7 @@
                 </button>
                 </pre>
 		</section>
-		<section id="typo">
+		<section class="margin-top-l" id="typo">
 			<h3>Typography</h3>
 			<div class="typo">
 				<h1>Heading 1 <span class="heading"><code>h1</code>4 rem</span></h1>
@@ -160,7 +160,7 @@
                 </button>
             </pre>
 		</section>
-		<section id="table">
+		<section class="margin-top-l" id="table">
 			<h3>Table</h3>
 			<table>
 				<thead>
@@ -202,7 +202,7 @@
                 </button>
             </pre>
 		</section>
-		<section id="button">
+		<section class="margin-top-l" id="button">
 			<h3>Button</h3>
 			<div class="row">
 				<div>
@@ -223,7 +223,7 @@
                 </button>
             </pre>
 		</section>
-		<section id="form">
+		<section class="margin-top-l" id="form">
 			<h3>Form</h3>
 			<form>
 				<div class="row">
@@ -266,7 +266,7 @@
         		</button>
         	</pre>
 		</section>
-		<section id="custom">
+		<section class="margin-top-l" id="custom">
 			<h3>Custom Input</h3>
 			<p class="warning">You should import "custominput.css" to your file.</p>
 			<br />
@@ -292,7 +292,7 @@
 			    </button>
 			</pre>
 		</section>
-		<section id="blockquote">
+		<section class="margin-top-l" id="blockquote">
 			<h3>Blockquote</h3>
 			<blockquote>
 				<p>Talk is cheap. Show me the code.</p>
@@ -308,7 +308,7 @@
                 </button>
             </pre>
 		</section>
-		<section id="list">
+		<section class="margin-top-l" id="list">
 			<h3>List</h3>
 			<div>
 				<ul>
@@ -333,10 +333,10 @@
             	</button>
         	</pre>
 		</section>
-		<section id="utility">
+		<section class="margin-top-l" id="utility">
 			<h3>Utility</h3>
 			<pre>
-                <code class="precode">//Utility Class List&#10;&#10;//shadow&#10;.shadow&#10;&#10;//text align&#10;.center-align&#10;.left-align&#10;.right-align&#10;.justify-align</code>
+                <code class="precode">//Utility Class List&#10;&#10;//display&#10;.block&#10;.inline-block&#10;.hidden&#10;&#10;//grid&#10;.column-direction&#10;.wrap&#10;.nowrap&#10;.flex-start&#10;.flex-end&#10;.justify-start&#10;.justify-center&#10;.justify-end&#10;.items-start&#10;.items-center&#10;.items-end&#10;&#10;//text align&#10;.center-align&#10;.left-align&#10;.right-align&#10;.justify-align&#10;&#10;//float&#10;.pull-left&#10;.pull-right&#10;&#10;//margin&#10;.margin-auto&#10;.margin-none&#10;.margin-top-s&#10;.margin-top-m&#10;.margin-top-l&#10;.margin-top-xl&#10;.margin-bottom-s&#10;.margin-bottom-m&#10;.margin-bottom-l&#10;.margin-bottom-xl&#10;&#10;//padding&#10;.padding-s&#10;.padding-m&#10;.padding-l&#10;&#10;//label&#10;.label&#10;.label-sm&#10;&#10;//visible(hidden)&#10;.visible(hidden)-s&#10;.visible(hidden)-m&#10;.visible(hidden)-l&#10;.visible(hidden)-xl&#10;&#10;//etc&#10;.center-block&#10;.box-center&#10;.border-radius&#10;.shadow&#10;</code>
                 <button class="btncopy">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
@@ -345,15 +345,15 @@
                 </button>
             </pre>
 		</section>
-		<section id="query">
+		<section class="margin-top-l" id="query">
 			<h3>Media Queries</h3>
 			<div class="row">
-				<ul class="x12 s6">
+				<ul class="x12 s6 margin-none">
 					<li>Mobile</li>
 					<li>Phablet</li>
 					<li>Tablet</li>
 				</ul>
-				<ul class="x12 s6">
+				<ul class="x12 s6 margin-none">
 					<li>Desktop</li>
 					<li>Desktop HD</li>
 				</ul>
@@ -369,7 +369,7 @@
             </pre>
 		</section>
 	</main>
-	<footer id="footer" class="center-align">
+	<footer id="footer" class="center-align margin-top-l">
 		<p>Made By <a href="https://keikaavousi.com/" target="_blank">Keikaavousi</a> & <a
 				href="http://saeedkefayati.com/" target="_blank">Kefayati</a></p>
 		<a class="btn" href="#">Donate Us</a>

@@ -130,3 +130,10 @@ blockquote {
         color: gray;
     }
 }
+
+hr {
+    border: unset;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.2);
+    width: 100%;
+    margin: 30px auto;
+}

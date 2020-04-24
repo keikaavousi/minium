@@ -17,6 +17,19 @@ $laptop: 'only screen and (min-width:768.1px)';
     transition: all .4s ease-in-out;
 }
 
+.active {
+    font-weight: 500;
+
+    @media #{$mobile} {
+        text-decoration: line-through;
+        font-weight: 500;
+    }
+}
+
+.brand {
+    font-weight: 400;
+}
+
 .hamburger {
     position: fixed;
     top: 0;

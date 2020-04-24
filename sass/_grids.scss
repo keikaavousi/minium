@@ -1,11 +1,11 @@
 $mobile: 'only screen and (max-width:576px)';
 $phablet: 'only screen and (min-width:576px) and (max-width:768px)';
-$tablet:'only screen and (min-width:992px)';
 
 .container {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
+    padding: 0 15px;
 
     @media #{$mobile} {
         width: 100%;
@@ -19,15 +19,8 @@ $tablet:'only screen and (min-width:992px)';
 .container-fluid {
     width: 100%;
     margin-right: auto;
+    padding: 0 15px;
     margin-left: auto;
-
-    @media #{$mobile} {
-        width: 100%;
-    }
-
-    @media #{$phablet} {
-        width: 80%;
-    }
 }
 
 .row {
@@ -70,20 +63,4 @@ $tablet:'only screen and (min-width:992px)';
 
 @media #{$extraLarge} {
     @include grid-generator(xl);
-}
-
-.wrap {
-    flex-wrap: wrap;
-}
-
-.nowrap {
-    flex-wrap: nowrap;
-}
-
-.flex-end {
-    justify-content: flex-end;
-}
-
-.flex-start {
-    justify-content: flex-start;
 }
