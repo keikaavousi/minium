@@ -5,7 +5,7 @@
     color: $dark;
     display: inline-flex;
     font-weight: 400;
-    padding: .75rem;
+    padding: .65rem;
 
     transition: .2s ease-in-out;
     transition-property: color,
@@ -44,8 +44,11 @@ fieldset {
     border: none;
 }
 
-input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="radio"]):not([type="checkbox"])
-,select,textarea,datalist,fieldset{
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+select,
+textarea,
+datalist,
+fieldset {
     width: 100%;
 }
 
@@ -60,13 +63,14 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]),
 select,
 datalist {
     @extend %inputs;
-    @extend %height;
-}
-input[type="radio"],input[type="checkbox"]{
-margin-right: 5px;
-margin-left: 5px;
+    // @extend %height;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 5px;
+}
 
 textarea {
     @extend %inputs;
@@ -87,8 +91,11 @@ select {
     }
 }
 
-
-
 input[type="file"] {
     padding: .45rem;
+}
+
+input[type="color"] {
+    padding: .375rem !important;
+    @extend %height;
 }

@@ -1,5 +1,6 @@
 .tooltip {
     position: relative;
+    margin: 0;
 
     &::after {
         content: attr(data-tooltip);
@@ -22,7 +23,8 @@
         border-right: 7px solid transparent;
         border-bottom: 7px solid $dark;
         position: absolute;
-        bottom: -.07rem;
+        // bottom: -.07rem;
+        bottom: 2rem;
         left: .4rem;
         display: none
     }

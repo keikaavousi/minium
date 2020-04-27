@@ -6,6 +6,7 @@
     background-color: #d7dcdf;
     outline: none;
     margin-bottom: 1rem;
+    padding: 0;
 
     //webkit
     &::-webkit-slider-thumb {
@@ -45,6 +46,10 @@
         }
     }
 
+    &:focus {
+        background: #d7dcdf;
+    }
+
     &:active::-moz-range-thumb {
         background-color: rgb(0, 0, 87);
     }
@@ -52,7 +57,6 @@
     &:focus::-moz-range-thumb {
         box-shadow: 0 0 0 3px white,
             0 0 0 5px rgb(0, 0, 87);
-
     }
 }
 
