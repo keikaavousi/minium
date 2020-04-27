@@ -58,7 +58,7 @@
 
 ////toggle button
 $borderRadius: 0.16rem;
-$primaryColor: #333;
+$dark: #333;
 
 .togglebtn {
     width: 0;
@@ -68,11 +68,11 @@ $primaryColor: #333;
 
     &:checked+label {
         background-color: white;
-        border-color: $primaryColor;
+        border-color: $dark;
 
         span {
             margin-left: 1.8rem;
-            background-color: $primaryColor;
+            background-color: $dark;
         }
     }
 
@@ -88,7 +88,7 @@ $primaryColor: #333;
         border: 1px solid #b3b3b3;
 
         &:hover {
-            border-color: $primaryColor;
+            border-color: $dark;
         }
 
         span {
@@ -124,7 +124,7 @@ $primaryColor: #333;
     }
 
     &:checked+label {
-        color: $primaryColor;
+        color: $dark;
     }
 
     &+label::before {
@@ -139,15 +139,15 @@ $primaryColor: #333;
     }
 
     &:checked+label::before {
-        border-color: $primaryColor;
+        border-color: $dark;
     }
 
     &+label:hover::before {
-        border-color: $primaryColor;
+        border-color: $dark;
     }
 
     &+label:hover {
-        color: $primaryColor;
+        color: $dark;
     }
 
     &+label:after {
@@ -175,7 +175,7 @@ $primaryColor: #333;
     }
 
     &:checked+label:after {
-        background: $primaryColor;
+        background: $dark;
         border-radius: 100%;
     }
 

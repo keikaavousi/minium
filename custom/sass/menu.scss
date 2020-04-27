@@ -1,4 +1,4 @@
-$primaryColor: #333;
+$dark: #333;
 $borderRadius: 0.16rem;
 $mobile: 'only screen and (max-width:768.1px)';
 $laptop: 'only screen and (min-width:768.1px)';
@@ -36,7 +36,7 @@ $laptop: 'only screen and (min-width:768.1px)';
     left: 0;
     right: 0;
     z-index: 999;
-    background-color: $primaryColor;
+    background-color: $dark;
     height: 70px;
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +55,7 @@ $laptop: 'only screen and (min-width:768.1px)';
 
         @media #{$mobile} {
             flex-direction: column;
-            background-color: $primaryColor;
+            background-color: $dark;
             top: 70px;
             right: -100%;
             bottom: 0;
@@ -243,7 +243,7 @@ $laptop: 'only screen and (min-width:768.1px)';
 
         width: 7.5rem;
         min-height: 100vh;
-        background-color: $primaryColor;
+        background-color: $dark;
         color: white !important;
 
         @media #{$laptop} {
@@ -326,7 +326,7 @@ $laptop: 'only screen and (min-width:768.1px)';
     position: fixed;
     top: 0;
     left: 0;
-    background-color: $primaryColor;
+    background-color: $dark;
     overflow: hidden;
     z-index: 999;
 

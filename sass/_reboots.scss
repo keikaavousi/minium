@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: $primaryColor;
-    outline-color: $primaryColor;
+    color: $dark;
+    outline-color: $dark;
 
     &::selection {
-        background: $primaryColor;
+        background: $dark;
         color: #fff;
         text-shadow: none;
     }
@@ -49,14 +49,14 @@ pre {
         transition: .1s all ease-in-out;
 
         svg {
-            stroke: lighten($primaryColor, 20%);
+            stroke: lighten($dark, 20%);
         }
 
         &:hover {
             background-color: darken(gainsboro, 5%);
 
             svg {
-                stroke: $primaryColor;
+                stroke: $dark;
             }
         }
     }
@@ -66,7 +66,7 @@ code {
     width: 100%;
     background: #f4f5f6;
     border-radius: $borderRadius;
-    border-left: .2rem solid $primaryColor;
+    border-left: .2rem solid $dark;
     font-size: 86%;
     padding: 1rem 1.75rem 1rem .75rem;
     white-space: pre;

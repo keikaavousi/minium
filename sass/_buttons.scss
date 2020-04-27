@@ -1,25 +1,3 @@
-%inputs {
-    background-color: transparent;
-    border: 0.0625rem solid #bbb;
-    border-radius: $borderRadius;
-    color: $primaryColor;
-    display: inline-flex;
-}
-
-%height {
-    height: 2.375rem;
-}
-
-input {
-    ::placeholder {
-        font-family: $fontFamily;
-    }
-}
-
-input {
-    @extend %inputs;
-}
-
 button,
 .btn,
 input[type="button"],
@@ -40,18 +18,22 @@ input[type="reset"] {
 
     &:not(:disabled) {
         cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $dark;
+            color: $white;
+            border-color: $gray;
+            outline: 0;
+            text-decoration: none;
+        }
     }
 
-    &:hover,
-    &:focus {
-        border-color: #888;
-        //box-shadow: 0 0 0 0.125em rgba(186, 186, 187, 0.25);
-        outline: 0;
-    }
+   
 
     &:disabled {
-        color: #888;
-        border-color: #bbb;
+        color: $gray;
+        border-color: $lightGray;
     }
 
 }

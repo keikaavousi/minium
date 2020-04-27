@@ -3,7 +3,7 @@
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    border: $borderRadius solid $primaryColor;
+    border: $borderRadius solid $dark;
     border-right-color: transparent;
     border-radius: 50%;
     animation: spinner-border .7s linear infinite;
@@ -31,7 +31,7 @@
 .loading {
 
     circle {
-        stroke: $primaryColor;
+        stroke: $dark;
         stroke-width: .16rem;
         stroke-dasharray: 20;
         stroke-dashoffset: 1000;

@@ -1,6 +1,9 @@
-$primaryColor: #333;
-$secondaryColor:rgb(0, 0, 87);
-// $third: #f8f7f4;
+$dark: rgb(10, 10, 10);
+$darkGray:rgb(85, 85, 85);
+$gray: #888;
+$lightGray: #bbb;
+$white: #fff;
+
 // $forth: #dce3e4;
 // $fifth: #b0c4c9;
 
@@ -21,3 +24,4 @@ $small: 'only screen and (min-width:576px)';
 $medium: 'only screen and (min-width:768px)';
 $large: 'only screen and (min-width:992px)';
 $extraLarge: 'only screen and (min-width:1200px)';
+$phablet: 'only screen and (min-width:576px) and (max-width:768px)';

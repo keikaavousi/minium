@@ -1,8 +1,52 @@
+%inputs {
+    background-color: transparent;
+    border: 0.0625rem solid #bbb;
+    border-radius: $borderRadius;
+    color: $dark;
+    display: inline-flex;
+    font-weight: 400;
+    padding: .75rem;
+
+    transition: .2s ease-in-out;
+    transition-property: color,
+        background-color,
+        border;
+
+    &:focus {
+        background-color: #fff;
+        color: #666;
+        border-color: $darkGray;
+        outline: none;
+    }
+}
+
+%height {
+    height: 2.375rem;
+}
+
+::placeholder {
+    color: $lightGray;
+}
+
+input {
+    @extend %inputs;
+}
+
 input,
 textarea,
 select,
-fieldset {
+fieldset,
+datalist {
     margin-bottom: 1.5rem;
+}
+
+fieldset {
+    border: none;
+}
+
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="radio"]):not([type="checkbox"])
+,select,textarea,datalist,fieldset{
+    width: 100%;
 }
 
 legend {
@@ -12,84 +56,39 @@ legend {
     text-transform: capitalize;
 }
 
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-    background: #fff;
-    border: 0.0625rem solid #bbb;
-    border-radius: $borderRadius;
-    color: $primaryColor;
-    display: block;
-    font-weight: 400;
-    height: 2.375rem;
-    margin-bottom: 1rem;
-    padding: .375rem .75rem;
-    transition: .2s ease-in-out;
-    transition-property: color,
-        background-color,
-        border;
-    font-family: $fontFamily;
-    width: 100%;
-
-    &:focus {
-        background-color: #fff;
-        color: #666;
-        border-color: $primaryColor;
-        outline: none;
-    }
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]),
+select,
+datalist {
+    @extend %inputs;
+    @extend %height;
+}
+input[type="radio"],input[type="checkbox"]{
+margin-right: 5px;
+margin-left: 5px;
 }
 
+
 textarea {
-    height: unset;
-    padding: .75rem;
+    @extend %inputs;
     resize: none;
 }
 
 select {
     padding-left: 15px;
     appearance: none;
-    background: url(../images/arrow-down.png) no-repeat;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAgklEQVRIie2SQQqAIBBFH90hqfsfxV20qkUH6QC2aIQhzKwUCnwwu5n/BD9U/oaVKYaTSaYp9JAq+LjAAiNgbuQYuUmq8MBexTkgCdXUyK6T20taYJKDBegjguNulyKISbTgcXhM4gWvw88kXpAl3KM/UU+oBNkkWcO1ZJXJHl4pxwa9wjhj/WdK6AAAAABJRU5ErkJggg==') no-repeat;
     background-position: right .9em top 50%,
         0 0;
     background-size: 1em auto,
         100%;
+
+    option {
+        border-color: $dark;
+    }
 }
 
-option {
-    border-color: $primaryColor;
-}
 
 
 input[type="file"] {
     padding: .45rem;
-}
-
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="time"] {
-    padding: .5rem;
-    display: flex;
-}
-
-input[type="range"] {
-    width: 100%;
-}
-
-input[type="color"] {
-    height: 2.375rem;
-    padding: .25rem;
-    width: 3.5rem;
-}
-
-fieldset {
-    border: 0;
 }
