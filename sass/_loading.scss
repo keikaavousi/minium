@@ -1,8 +1,8 @@
 /////bs4 spinner
 .spinner {
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
+    width: 60px;
+    height: 60px;
     border: $borderRadius solid $dark;
     border-right-color: transparent;
     border-radius: 50%;
@@ -29,6 +29,8 @@
 
 /////custom loadnig
 .loading {
+    width: 100px;
+    height: 100px;
 
     circle {
         stroke: $dark;

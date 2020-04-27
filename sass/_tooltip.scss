@@ -1,18 +1,18 @@
 .tooltip {
     position: relative;
-    margin: 0;
 
     &::after {
         content: attr(data-tooltip);
         position: absolute;
         background-color: $dark;
-        border-radius: 3px;
+        border-radius: $borderRadius;
         color: #fff;
-        padding: 5px;
+        padding: 10px;
         font-size: 0.8em;
         min-width: 130px;
         text-align: center;
         display: none;
+        top: 22px;
     }
 
     &::before {
@@ -24,7 +24,7 @@
         border-bottom: 7px solid $dark;
         position: absolute;
         // bottom: -.07rem;
-        bottom: 2rem;
+        bottom: -3px;
         left: .4rem;
         display: none
     }
