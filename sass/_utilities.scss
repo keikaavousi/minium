@@ -157,7 +157,7 @@
 
 .label {
     display: inline-block;
-    background: #dbdbdb;
+    background: lighten($lightGray, 12.5%);
     padding: 5px 10px;
     border-radius: 20px;
 }

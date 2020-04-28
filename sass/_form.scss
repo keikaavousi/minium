@@ -1,6 +1,6 @@
 %inputs {
     background-color: transparent;
-    border: 0.0625rem solid #bbb;
+    border: 0.0625rem solid $lightGray;
     border-radius: $borderRadius;
     color: $dark;
     display: inline-flex;
@@ -13,8 +13,8 @@
         border;
 
     &:focus {
-        background-color: #fff;
-        color: #666;
+        background-color: $white;
+        color: $dark;
         border-color: $darkGray;
         outline: none;
     }

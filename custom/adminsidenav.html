@@ -10,32 +10,24 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="adminwrapper">
+        <!-- Start Nav -->
         <aside>
             <ul class="sideadmin">
                 <a id="brand" href="#">
                     <img src="../images/logo.png" alt="">
                 </a>
                 <hr>
-                <li>
-                    <a href="#">Document</a>
-                </li>
-                <li>
-                    <a href="#">Service</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                <li><a href="#">Document</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </aside>
+        <!-- End Nav -->
         <div class="content-wrapper">
-            <nav>
+            <nav class="adminnav">
                 <button id="menubtn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -46,7 +38,13 @@
                 </button>
             </nav>
             <!-- Start Content -->
-            <div class="container-fluid"></div>
+            <!-- You Should Add Menu Class For Your Container -->
+            <div class="container-fluid menu">
+                <blockquote>
+                    <p>Stay hungry, stay foolish.</p>
+                    <footer>Steve Jobs</footer>
+                </blockquote>
+            </div>
             <!-- End Content -->
         </div>
     </div>

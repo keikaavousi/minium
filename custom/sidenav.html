@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Start SideNav -->
     <aside>
         <nav class="sidenav">
             <ul>
@@ -22,15 +23,16 @@
                         </svg>
                     </button>
                 </li>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Client</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Document</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </aside>
     <div class="overlay"></div>
+    <!-- End SideNav -->
     <div class="container-fluid" id="main">
         <button id="navopen">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -40,6 +42,41 @@
                 <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
         </button>
+        <!-- Start Content -->
+        <h1>Example</h1>
+        <form>
+            <div class="row">
+                <div class="x12 s6">
+                    <label for="exampleEmail">Email</label>
+                    <input type="email" id="exampleEmail">
+                </div>
+                <div class="x12 s6">
+                    <label for="examplePassword">Password</label>
+                    <input type="password" id="examplePassword">
+                </div>
+                <div class="x12 s12">
+                    <label for="exampleSelect">Gender</label>
+                    <select id="exampleSelect">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="x12 s12">
+                    <label for="exampleArea">Description</label>
+                    <textarea id="exampleArea" cols="30" rows="10"></textarea>
+                </div>
+                <div class="x12 s12">
+                    <div class="row items-center">
+                        <div>
+                            <input class="margin-none" type="checkbox" id="exampleCheck">
+                            <label class="margin-none" for="exampleCheck">Remember Me</label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- End Content -->
     </div>
     <script src="js/sidenav.js"></script>
 </body>

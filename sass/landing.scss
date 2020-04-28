@@ -1,4 +1,9 @@
-$dark: #333;
+$dark: #0a0a0a;
+$darkGray:#555555;
+$gray: #888888;
+$lightGray: #bbbbbb;
+$white: #ffffff;
+$borderRadius: 0.16rem;
 $secendColor: #dce3e4;
 
 $small: 'only screen and (max-width:576px)';
@@ -14,6 +19,42 @@ input[type="button"]:focus,
 input[type="submit"]:focus {
     background-color: $dark;
     color: $secendColor;
+}
+
+pre {
+    .btncopy {
+        background-color: darken($white, 14%);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: .5rem !important;
+        margin: 0;
+        border: 0;
+        height: 2.95rem;
+        width: 40px;
+        padding-left: 7px;
+        transition: .1s all ease-in-out;
+
+        svg {
+            stroke: lighten($dark, 20%);
+        }
+
+        &:hover {
+
+            // background-color: darken(gainsboro, 5%);
+            svg {
+                stroke: $white;
+            }
+        }
+
+        &:focus {
+            color: $white;
+
+            svg {
+                stroke: $white;
+            }
+        }
+    }
 }
 
 #home {

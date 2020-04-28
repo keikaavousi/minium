@@ -88,9 +88,10 @@ small {
 
 blockquote {
     width: 100%;
-    background: #f4f5f6;
+    background: darken($white, 5%);
     border-radius: $borderRadius;
-    border-left: .2rem solid $dark;
+    // border-left: .2rem solid $dark;
+    border-bottom: .2rem solid $dark;
     font-size: 86%;
     padding: 1rem 1.75rem 1rem .75rem;
     margin-bottom: 1rem;
@@ -109,7 +110,7 @@ blockquote {
         top: 0;
         right: 12px;
         font-size: 6em;
-        color: darkgray;
+        color: darken($lightGray, 8%);
         font-style: italic;
     }
 
@@ -123,12 +124,13 @@ blockquote {
         font-style: italic;
         margin: .5rem .75rem 0;
         text-align: right;
-        color: gray;
+        color: $gray;
     }
 }
+
 hr {
     border: unset;
-    border-bottom: 1px solid rgba(187, 187, 187, 0.2);
+    border-bottom: 1px solid $gray;
     width: 100%;
     margin: 30px auto;
 }

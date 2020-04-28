@@ -12,45 +12,11 @@ pre {
     margin: 2rem 0;
     display: flex;
     position: relative;
-
-    .btncopy {
-        background-color: gainsboro;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        padding: .5rem !important;
-        margin: 0;
-        border: 0;
-        height: 2.95rem;
-        width: 40px;
-        padding-left: 7px;
-        transition: .1s all ease-in-out;
-
-        svg {
-            stroke: lighten($dark, 20%);
-        }
-
-        &:hover {
-
-            // background-color: darken(gainsboro, 5%);
-            svg {
-                stroke: $white;
-            }
-        }
-
-        &:focus {
-            color: $white;
-
-            svg {
-                stroke: $white;
-            }
-        }
-    }
 }
 
 code {
     width: 100%;
-    background: #f4f5f6;
+    background: darken($white, 4.8%);
     border-radius: $borderRadius;
     border-left: .2rem solid $dark;
     font-size: 86%;

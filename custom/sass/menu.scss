@@ -1,4 +1,8 @@
-$dark: #333;
+$dark: #0a0a0a;
+$darkGray:#555555;
+$gray: #888888;
+$lightGray: #bbbbbb;
+$white: #ffffff;
 $borderRadius: 0.16rem;
 $mobile: 'only screen and (max-width:768.1px)';
 $laptop: 'only screen and (min-width:768.1px)';
@@ -9,8 +13,12 @@ $laptop: 'only screen and (min-width:768.1px)';
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: white;
+    background-color: $white;
     border-radius: $borderRadius;
+}
+
+.menu {
+    margin-top: 75px;
 }
 
 * {
@@ -30,7 +38,7 @@ $laptop: 'only screen and (min-width:768.1px)';
     font-weight: 400;
 }
 
-.hamburger {
+.nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -52,6 +60,7 @@ $laptop: 'only screen and (min-width:768.1px)';
         list-style: none;
         display: flex;
         padding: .375rem;
+        margin: 0;
 
         @media #{$mobile} {
             flex-direction: column;
@@ -65,34 +74,35 @@ $laptop: 'only screen and (min-width:768.1px)';
             padding: 1rem;
 
             li {
-                margin-top: .5rem;
+                margin-top: .75rem !important;
             }
         }
 
         li {
             padding: .75rem;
+            margin: 0;
 
-            @media #{$mobile} {
-                padding: 1.5rem;
-            }
+            // @media #{$mobile} {
+            //     padding: 1.5rem;
+            // }
         }
     }
 
     a {
-        color: white;
-        text-decoration: none;
+        color: $white;
+        padding: .5rem;
 
-        img {
-            width: 38px;
-            height: 38px;
-            vertical-align: middle;
-            padding: .2rem;
-            margin-right: .5rem;
-        }
+        // img {
+        //     width: 38px;
+        //     height: 38px;
+        //     vertical-align: middle;
+        //     padding: .2rem;
+        //     margin-right: .5rem;
+        // }
     }
 
     button {
-        padding: 0 8px;
+        padding: 0 8px !important;
         width: 40px;
         height: 40px;
 
@@ -102,7 +112,7 @@ $laptop: 'only screen and (min-width:768.1px)';
 
         span {
             border-radius: $borderRadius;
-            background-color: white;
+            background-color: $white;
             width: 100%;
             height: 3px;
             position: relative;
@@ -211,7 +221,7 @@ $laptop: 'only screen and (min-width:768.1px)';
 
         path {
             fill: none;
-            stroke: #ffffff;
+            stroke: $white;
             // stroke-width: 3;
             stroke-linecap: round;
             stroke-linejoin: round;
@@ -227,24 +237,27 @@ $laptop: 'only screen and (min-width:768.1px)';
 //end animation responsive menu
 
 //start admin sidenav
-.wrapper {
+.adminwrapper {
     display: flex;
 
     a {
-        text-decoration: none;
-        color: white;
+        color: $white;
     }
 
     .sideadmin {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 9999;
         display: flex;
         flex-direction: column;
         margin: 0;
         list-style: none;
-
         width: 7.5rem;
         min-height: 100vh;
         background-color: $dark;
-        color: white !important;
+        color: $white !important;
 
         @media #{$laptop} {
             width: 14rem !important;
@@ -277,26 +290,39 @@ $laptop: 'only screen and (min-width:768.1px)';
         flex-direction: column;
         min-height: 100vh;
         width: calc(100% - 7.5rem);
-        background-color: #f8f9fc;
+        background-color: darken($white, 2%);
+        background-color: $white;
+        margin-left: 7.5rem;
 
         @media #{$laptop} {
             width: calc(100% - 14rem);
+            margin-left: 14rem !important;
         }
 
-        nav {
-            position: relative;
-            height: 80px;
+        .adminnav {
+            // position: relative;
+            height: 70px;
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1.5rem;
             padding: .5rem 1rem;
-            background-color: white;
+            background-color: $white;
             box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 14rem;
+            width: auto !important;
+            z-index: 9999;
+
+            @media #{$mobile} {
+                left: 7.5rem;
+            }
 
             button {
-                padding: 0 .375rem;
+                padding: 0 .375rem !important;
+                background-color: $white;
 
                 @media #{$laptop} {
                     display: none;
@@ -313,6 +339,13 @@ $laptop: 'only screen and (min-width:768.1px)';
 
 .contenttoggle {
     width: 100% !important;
+    margin-left: 0 !important;
+
+    .adminnav {
+        @media #{$mobile} {
+            left: 0 !important;
+        }
+    }
 }
 
 //end admin sidenav
@@ -340,28 +373,33 @@ $laptop: 'only screen and (min-width:768.1px)';
 
             #navclose {
                 float: right;
-                padding: 0 8px;
+                padding: 0 8px !important;
+                background-color: $white;
 
                 svg {
-                    stroke: white;
+                    stroke: $dark;
                 }
             }
 
             a {
-                text-decoration: none;
-                color: white;
+                color: $white;
             }
         }
 
         li:nth-child(2) {
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
     }
 }
 
 #navopen {
-    padding: 0 8px;
+    padding: 0 8px !important;
     margin-top: 1.6rem;
+    background-color: $white;
+
+    svg {
+        stroke: $dark;
+    }
 }
 
 #main {
@@ -376,42 +414,15 @@ $laptop: 'only screen and (min-width:768.1px)';
     position: fixed;
     width: 0;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: $dark;
     opacity: 0;
     transition: opacity .3s;
     z-index: 99;
 }
 
 .overlayed {
-    opacity: .8;
+    opacity: .7;
     width: 100%;
 }
-
-//end side navigation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //end side navigation
