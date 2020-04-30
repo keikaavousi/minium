@@ -19,7 +19,7 @@ $white: #ffffff;
         background: lighten($lightGray, 5%);
     }
 
-//webkit
+    //webkit
     &::-webkit-slider-thumb {
         appearance: none;
         width: 20px;
@@ -43,7 +43,7 @@ $white: #ffffff;
             0 0 0 5px $darkGray;
     }
 
-//mozila
+    //mozila
     &::-moz-range-thumb {
         width: 20px;
         height: 20px;
