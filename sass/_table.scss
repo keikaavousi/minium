@@ -27,6 +27,12 @@ table.stripe tbody tr:nth-child(odd) {
     }
 }
 
+.table-center th {
+    @media #{$tableResponsive} {
+        text-align: right;
+    }
+}
+
 tr {
     border-bottom: 1px solid $dark;
 }

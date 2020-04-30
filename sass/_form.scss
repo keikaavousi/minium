@@ -71,6 +71,6 @@ input[type="file"] {
 }
 
 input[type="color"] {
-    padding: .375rem;
+    padding: .375rem !important;
     @extend %height;
 }
