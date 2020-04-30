@@ -1,29 +1,3 @@
-%inputs {
-    background-color: transparent;
-    border: 0.0625rem solid $lightGray;
-    border-radius: $borderRadius;
-    color: $dark;
-    display: inline-flex;
-    font-weight: 400;
-    padding: .65rem;
-
-    transition: .2s ease-in-out;
-    transition-property: color,
-        background-color,
-        border;
-
-    &:focus {
-        background-color: $white;
-        color: $dark;
-        border-color: $darkGray;
-        outline: none;
-    }
-}
-
-%height {
-    height: 2.375rem;
-}
-
 ::placeholder {
     color: $lightGray;
 }
@@ -63,8 +37,9 @@ input:not([type="radio"]):not([type="checkbox"]):not([type="range"]),
 select,
 datalist {
     @extend %inputs;
-    // @extend %height;
 }
+
+
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -96,6 +71,6 @@ input[type="file"] {
 }
 
 input[type="color"] {
-    padding: .375rem !important;
+    padding: .375rem;
     @extend %height;
 }
