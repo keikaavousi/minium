@@ -130,7 +130,8 @@ $borderRadius: 0.16rem;
         cursor: pointer;
         line-height: 20px;
         display: inline-block;
-        color: $lightGray;
+        // color: $lightGray;
+        color: $dark;
     }
 
     &:checked+label {
@@ -156,9 +157,13 @@ $borderRadius: 0.16rem;
         border-color: $dark;
     }
 
-    &+label:hover {
-        color: $dark;
-    }
+    // &+label:hover {
+    //     color: $dark;
+    // }
+
+    // &+label:focus {
+    //     outline: none;
+    // }
 
     &+label:after {
         content: '';
@@ -201,7 +206,8 @@ $borderRadius: 0.16rem;
 
     &:checked+label::after {
         content: url(../images/check.png);
-        top: -.05rem;
+        // top: -.05rem;
+        top: .1px;
         left: -.05rem;
     }
 

@@ -120,8 +120,8 @@ blockquote {
         overflow-x: auto;
     }
 
-    footer {
-        font-style: italic;
+    em {
+        display: block;
         margin: .5rem .75rem 0;
         text-align: right;
         color: $gray;
