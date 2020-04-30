@@ -206,8 +206,7 @@ $borderRadius: 0.16rem;
 
     &:checked+label::after {
         content: url(../images/check.png);
-        // top: -.05rem;
-        top: .1px;
+        top: -.05rem;
         left: -.05rem;
     }
 
