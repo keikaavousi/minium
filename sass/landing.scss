@@ -97,11 +97,6 @@ $tableResponsive: 'only screen and (max-width:992px)';
     background-color: $dark;
     padding: .75rem;
 
-    a:hover {
-        background-color: white;
-        color: $dark !important;
-    }
-
     a,
     p {
         color: white;
