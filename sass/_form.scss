@@ -18,12 +18,13 @@ fieldset {
     border: none;
 }
 
-input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="color"]),
 select,
 textarea,
 datalist,
 fieldset {
     width: 100%;
+    padding: .65rem;
 }
 
 legend {
@@ -71,6 +72,6 @@ input[type="file"] {
 }
 
 input[type="color"] {
-    padding: .375rem !important;
+    padding: .375rem;
     @extend %height;
 }

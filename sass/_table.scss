@@ -12,7 +12,6 @@ table.stripe tr {
 }
 
 table.stripe tbody tr:nth-child(odd) {
-    // background-color: lighten($dark, 50%);
     background-color: $stripeColor;
 }
 
@@ -34,7 +33,7 @@ table.stripe tbody tr:nth-child(odd) {
 }
 
 tr {
-    border-bottom: 1px solid $dark;
+    border-bottom: 1px solid $lightGray;
 }
 
 td,
