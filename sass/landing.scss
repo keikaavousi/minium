@@ -18,42 +18,6 @@ $tableResponsive: 'only screen and (max-width:992px)';
 //     color: $secendColor;
 // }
 
-pre {
-    .btncopy {
-        background-color: darken($white, 14%);
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        padding: .5rem !important;
-        margin: 0;
-        border: 0;
-        height: 2.95rem;
-        width: 40px;
-        padding-left: 7px;
-
-        svg {
-            stroke: lighten($dark, 20%);
-            transition: none !important;
-        }
-
-        &:hover {
-
-            // background-color: darken(gainsboro, 5%);
-            svg {
-                stroke: $white;
-            }
-        }
-
-        &:focus {
-            color: $white;
-
-            svg {
-                stroke: $white;
-            }
-        }
-    }
-}
-
 #home {
     margin-top: 70px;
     background-color: $secendColor;
@@ -148,4 +112,43 @@ pre {
 .warning {
     color: red;
     text-align: justify;
+}
+
+pre {
+    .btncopy {
+        background-color: darken($white, 14%);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: .5rem !important;
+        margin: 0;
+        border: 0;
+        height: 2.95rem;
+        width: 40px;
+        padding-left: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            stroke: lighten($dark, 20%);
+            transition: none !important;
+        }
+
+        &:hover {
+
+            // background-color: darken(gainsboro, 5%);
+            svg {
+                stroke: $white;
+            }
+        }
+
+        &:focus {
+            color: $white;
+
+            svg {
+                stroke: $white;
+            }
+        }
+    }
 }
