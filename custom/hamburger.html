@@ -2,39 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger Menu Responsive</title>
-    <link rel="stylesheet" href="../dist/minimal.min.css">
-    <link rel="stylesheet" href="../dist/menu.min.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Hamburger Animation Menu Responsive</title>
+	<link rel="stylesheet" href="../dist/minimal.min.css" />
+	<link rel="stylesheet" href="../dist/menu.min.css" />
 </head>
 
 <body>
-    <!-- Start Hamburger Menu -->
-    <nav class="nav">
-        <a href="#">MinimalCSS</a>
-        <button>
-            <span></span>
-        </button>
-        <ul>
-            <li><a href="#">Document</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- End Hamburger Menu -->
-    <!-- Start Content -->
-    <!-- You Should Add Menu Class For Your Container -->
-    <div class="container menu">
-        <blockquote>
-            <p>Stay hungry, stay foolish.</p>
-            <footer>Steve Jobs</footer>
-        </blockquote>
-    </div>
-    <!-- End Content -->
-    <script src="js/hamburger.js"></script>
+	<!-- Start Hamburger Menu -->
+	<nav class="nav">
+		<a href="#" id="brand">MinimalCSS</a>
+		<label id="lblmenu" for="menu">
+			<input type="checkbox" name="menu" id="menu" />
+			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+				<path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+				<path d="M0 50h99"></path>
+				<path d="M0 50h99"></path>
+				<path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+				<path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+			</svg>
+		</label>
+		<ul>
+			<li><a href="#">Document</a></li>
+			<li><a href="#">Service</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<!-- End Hamburger Menu -->
+	<!-- Start Content -->
+	<!-- You Should Add Menu Class For Your Container -->
+	<div class="container menu">
+		<blockquote>
+			<p>Stay hungry, stay foolish.</p>
+			<footer>Steve Jobs</footer>
+		</blockquote>
+	</div>
+	<!-- End Content -->
+	<script src="js/hamburger.js"></script>
 </body>
 
 </html>

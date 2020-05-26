@@ -39,8 +39,6 @@ datalist {
     @extend %inputs;
 }
 
-
-
 input[type="radio"],
 input[type="checkbox"] {
     margin-right: 5px;
@@ -74,3 +72,21 @@ input[type="color"] {
     padding: .375rem !important;
     @extend %height;
 }
+
+datalist {
+    display: none;
+}
+
+// input[list] {
+//     appearance: none;
+// }
+
+// input[list]:focus,
+// input[list]:hover {
+//     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAgklEQVRIie2SQQqAIBBFH90hqfsfxV20qkUH6QC2aIQhzKwUCnwwu5n/BD9U/oaVKYaTSaYp9JAq+LjAAiNgbuQYuUmq8MBexTkgCdXUyK6T20taYJKDBegjguNulyKISbTgcXhM4gWvw88kXpAl3KM/UU+oBNkkWcO1ZJXJHl4pxwa9wjhj/WdK6AAAAABJRU5ErkJggg==') no-repeat;
+//     background-position: right .9em top 50%,
+//         0 0;
+//     background-size: 1em auto,
+//         100%;
+//     width: 100%;
+// }

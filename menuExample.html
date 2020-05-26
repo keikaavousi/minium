@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinimalCss Menu Example</title>
+    <link rel="stylesheet" href="dist/minimal.min.css">
+    <link rel="stylesheet" href="dist/menu.min.css">
+    <link rel="stylesheet" href="dist/copy.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="#">MinimalCSS</a>
+            <label id="lblmenu" for="menu">
+                <input type="checkbox" name="menu" id="menu" />
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+                    <path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+                    <path d="M0 50h99"></path>
+                    <path d="M0 50h99"></path>
+                    <path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+                    <path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+                </svg>
+            </label>
+            <ul>
+                <li><a href="index.html#download">Get Started</a></li>
+                <li><a href="index.html#grid">Document</a></li>
+                <li><a href="index.html#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="margin-top-l" id="hamburger">
+            <h3>Hamburger Menu</h3>
+            <pre>
+                <code class="precode">&lt;nav class="nav"&gt;&#10;&#9;&lt;a href="#" id="brand"&gt;Brand&lt;&sol;a&gt;&#10;&#9;&lt;label id="lblmenu" for="menu"&gt;&#10;&#9;&#9;&lt;input type="checkbox" name="menu" id="menu"&sol;&gt;&#10;&#9;&#9;&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 70l28-28c2-2 2-2 7-2h64"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 70l28-28c2-2 2-2 7-2h64"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 50h99"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 50h99"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 30l28 28c2 2 2 2 7 2h64"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 30l28 28c2 2 2 2 7 2h64"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&lt;&sol;svg&gt;&#10;&#9;&lt;&sol;label&gt;&#10;&#9;&lt;ul&gt;&#10;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&lt;&sol;ul&gt;&#10;&lt;&sol;nav&gt;&#10;&lt;div class="menu container"&gt;&#10;&#9;&lt;h1&gt;Start Content&lt;&sol;h1&gt;&#10;&lt;&sol;div&gt;</code>
+                <button class="btncopy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
+                </button>
+            </pre>
+        </section>
+        <section class="margin-top-l" id="side">
+            <h3>Sidebar Menu</h3>
+            <pre>
+                <code class="precode">&lt;aside&gt;&#10;&#9;&lt;nav class="sidenav"&gt;&#10;&#9;&#9;&lt;ul&gt;&#10;&#9;&#9;&#9;&lt;li&gt;&#10;&#9;&#9;&#9;&#9;&lt;button id="navclose"&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;line x1="18" y1="6" x2="6" y2="18"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;line x1="6" y1="6" x2="18" y2="18"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;&sol;svg&gt;&#10;&#9;&#9;&#9;&#9;&lt;&sol;button&gt;&#10;&#9;&#9;&#9;&lt;&sol;li&gt;&#10;&#9;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&lt;&sol;ul&gt;&#10;&#9;&lt;&sol;nav&gt;&#10;&lt;&sol;aside&gt;&#10;&lt;div class="overlay"&gt;&lt;&sol;div&gt;&#10;&lt;div class="container-fluid" id="main"&gt;&#10;&#9;&lt;button id="navopen"&gt;&#10;&#9;&#9;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&#10;&#9;&#9;&#9;&lt;line x1="3" y1="12" x2="21" y2="12"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&lt;line x1="3" y1="6" x2="21" y2="6"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&lt;line x1="3" y1="18" x2="21" y2="18"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&lt;&sol;svg&gt;&#10;&#9;&lt;&sol;button&gt;&#10;&#9;&lt;h1&gt;Example&lt;&sol;h1&gt;&#10;&lt;&sol;div&gt;</code>
+                <button class="btncopy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
+                </button>
+            </pre>
+        </section>
+        <section class="margin-top-l" id="admin">
+            <h3>Admin Menu</h3>
+            <pre>
+                <code class="precode">&lt;div class="admin-wrapper"&gt;&#10;&#9;&lt;aside&gt;&#10;&#9;&#9;&lt;ul class&gt;&lt;&sol;ul&gt;&#10;&#9;&lt;&sol;aside&gt;&#10;&lt;&sol;div&gt;</code>
+                <button class="btncopy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+                    </svg>
+                </button>
+            </pre>
+        </section>
+    </main>
+    <script src="js/master.js"></script>
+</body>
+
+</html>
