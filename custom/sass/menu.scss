@@ -156,7 +156,6 @@ $laptop: 'only screen and (min-width:768.1px)';
 }
 
 #lblmenu {
-    display: block;
     cursor: pointer;
     // position: absolute;
     // top: -27px;
@@ -416,6 +415,7 @@ $laptop: 'only screen and (min-width:768.1px)';
 
 #main {
     height: 100vh;
+    margin-left: 0;
 }
 
 .overlay {

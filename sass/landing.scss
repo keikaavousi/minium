@@ -9,15 +9,6 @@ $secendColor: #dce3e4;
 $small: 'only screen and (max-width:576px)';
 $tableResponsive: 'only screen and (max-width:992px)';
 
-
-// a:hover,
-// button:focus,
-// input[type="button"]:focus,
-// input[type="submit"]:focus {
-//     background-color: $dark;
-//     color: $secendColor;
-// }
-
 #home {
     margin-top: 70px;
     background-color: $secendColor;
@@ -131,8 +122,6 @@ pre {
         }
 
         &:hover {
-
-            // background-color: darken(gainsboro, 5%);
             svg {
                 stroke: $white;
             }
