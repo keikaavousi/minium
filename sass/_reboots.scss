@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: $dark;
     outline-color: $dark;
+    scroll-behavior: smooth;
 
     &::selection {
         background: $dark;
@@ -14,7 +15,7 @@
 
 body {
     width: 100%;
-    font-family: $fontFamily;
+    font-family: $fontFamily !important;
     font-weight: $fontWeight;
     font-size: 16px;
     overflow-x: hidden;
