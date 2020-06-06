@@ -33,7 +33,7 @@ legend {
     text-transform: capitalize;
 }
 
-input:not([type="radio"]):not([type="checkbox"]):not([type="range"]),
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="color"]):not([type="button"]):not([type="submit"]):not([type="reset"]),
 select,
 datalist {
     @extend %inputs;
@@ -69,7 +69,7 @@ input[type="file"] {
 }
 
 input[type="color"] {
-    padding: .375rem !important;
+    padding: .375rem;
     @extend %height;
 }
 

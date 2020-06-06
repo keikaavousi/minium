@@ -7,10 +7,11 @@ input[type="reset"] {
     @extend %height;
     font-size: 0.6875rem;
     font-weight: 400;
+    font-family: $fontFamily;
     line-height: 2.375rem;
     letter-spacing: .08rem;
     margin: .5rem 0;
-    padding: 0 1.875rem !important;
+    padding: 0 1.875rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;

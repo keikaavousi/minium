@@ -15,8 +15,6 @@
 
 body {
     width: 100%;
-    font-family: $fontFamily !important;
-    font-weight: $fontWeight;
-    font-size: 16px;
+    font: $fontWeight $fontSize $fontFamily;
     overflow-x: hidden;
 }
