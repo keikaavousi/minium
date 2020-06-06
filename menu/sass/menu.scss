@@ -7,6 +7,11 @@ $borderRadius: 0.16rem;
 $mobile: 'only screen and (max-width:768.1px)';
 $laptop: 'only screen and (min-width:768.1px)';
 
+%svgbutton {
+    padding: 6px 8px !important;
+    background-color: $white;
+}
+
 
 * {
     transition: all .4s ease-in-out;
@@ -265,9 +270,8 @@ $laptop: 'only screen and (min-width:768.1px)';
                 left: 7.5rem;
             }
 
-            button {
-                padding: 0 .375rem !important;
-                background-color: $white;
+            #menubtn {
+                @extend %svgbutton;
 
                 @media #{$laptop} {
                     display: none;
@@ -325,9 +329,8 @@ $laptop: 'only screen and (min-width:768.1px)';
             }
 
             #navclose {
+                @extend %svgbutton;
                 float: right;
-                padding: 0 8px !important;
-                background-color: $white;
 
                 svg {
                     stroke: $dark;
@@ -344,9 +347,8 @@ $laptop: 'only screen and (min-width:768.1px)';
 }
 
 #navopen {
-    padding: 0 8px !important;
+    @extend %svgbutton;
     margin-top: 1.6rem;
-    background-color: $white;
 
     svg {
         stroke: $dark;
