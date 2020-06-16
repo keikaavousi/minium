@@ -5,35 +5,6 @@ $gray: #888888;
 $lightGray: #bbbbbb;
 $white: #ffffff;
 
-//fonts
-@font-face {
-    font-family: 'Bariol';
-    font-style: normal;
-    font-weight: 100;
-    src: local('Bariol Thin'), url('https://www.cufonfonts.com/cdn/webfont/bariol/bariol_thin-webfont.woff?token=DbHNRLqO2_Kz8G-uZzURBWuXP6FNnPoa') format('woff');
-}
-
-@font-face {
-    font-family: 'Bariol';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Bariol Light'), url('https://www.cufonfonts.com/cdn/webfont/bariol/bariol_light-webfont.woff?token=DbHNRLqO2_Kz8G-uZzURBWuXP6FNnPoa') format('woff');
-}
-
-@font-face {
-    font-family: 'Bariol';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Bariol Regular'), url('https://www.cufonfonts.com/cdn/webfont/bariol/bariol_regular-webfont.woff?token=DbHNRLqO2_Kz8G-uZzURBWuXP6FNnPoa') format('woff');
-}
-
-@font-face {
-    font-family: 'Bariol';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Bariol Bold'), url('https://www.cufonfonts.com/cdn/webfont/bariol/bariol_bold-webfont.woff?token=DbHNRLqO2_Kz8G-uZzURBWuXP6FNnPoa') format('woff');
-}
-
 // utils
 $borderRadius: 0.16rem;
 $fontFamily: 'Bariol',

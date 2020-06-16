@@ -1,20 +1,20 @@
-/////bs4 spinner
 .spinner {
     width: 80px;
     height: 80px;
     border: $borderRadius solid $dark;
     border-right-color: transparent;
     border-radius: 50%;
-    animation: spinner-border .7s linear infinite;
+    animation: spinner .7s linear infinite;
+    -webkit-animation: spinner .7s linear infinite;
 }
 
-@keyframes spinner-border {
+@keyframes spinner {
     to {
         transform: rotate(360deg);
     }
 }
 
-/////custom loadnig
+
 .loading {
     width: 80px;
     height: 80px;

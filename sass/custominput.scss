@@ -130,7 +130,6 @@ $borderRadius: 0.16rem;
         cursor: pointer;
         line-height: 20px;
         display: inline-block;
-        // color: $lightGray;
         color: $dark;
     }
 
@@ -156,14 +155,6 @@ $borderRadius: 0.16rem;
     &+label:hover::before {
         border-color: $dark;
     }
-
-    // &+label:hover {
-    //     color: $dark;
-    // }
-
-    // &+label:focus {
-    //     outline: none;
-    // }
 
     &+label:after {
         content: '';
