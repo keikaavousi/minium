@@ -2,26 +2,26 @@ code,
 kbd,
 pre,
 samp {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1em;
 }
 
 pre {
-    width: 100%;
-    border-radius: $borderRadius;
-    margin: 2rem 0;
-    display: flex;
-    position: relative;
+	width: 100%;
+	border-radius: $borderRadius;
+	margin: 2rem 0;
+	display: flex;
+	position: relative;
 }
 
 code {
-    width: 100%;
-    background: darken($white, 4.8%);
-    border-radius: $borderRadius;
-    border-left: .2rem solid $dark;
-    font-size: 86%;
-    padding: 1rem 1.75rem 1rem .75rem;
-    white-space: pre;
-    display: inline-flex;
-    overflow-y: hidden;
+	width: 100%;
+	background: darken($white, 4.8%);
+	border-radius: $borderRadius;
+	border-left: 0.2rem solid $dark;
+	font-size: 86%;
+	padding: 1rem 1.75rem 1rem 0.75rem;
+	white-space: pre;
+	display: inline-flex;
+	overflow-y: hidden;
 }

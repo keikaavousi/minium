@@ -1,20 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: $dark;
-    outline-color: $dark;
-    scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $dark;
+	outline-color: $dark;
+	scroll-behavior: smooth;
 
-    &::selection {
-        background: $dark;
-        color: $white;
-        text-shadow: none;
-    }
+	&::selection {
+		background: $dark;
+		color: $white;
+		text-shadow: none;
+	}
 }
 
 body {
-    width: 100%;
-    font: $fontWeight $fontSize $fontFamily;
-    overflow-x: hidden;
+	width: 100%;
+	font: $fontWeight $fontSize $fontFamily;
+	overflow-x: hidden;
 }

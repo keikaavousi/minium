@@ -2,107 +2,107 @@ $tableResponsive: 'only screen and (max-width:992px)';
 $stripeColor: #dce3e4;
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 table.stripe tr {
-    border-bottom: none;
+	border-bottom: none;
 }
 
 table.stripe tbody tr:nth-child(odd) {
-    background-color: $stripeColor;
+	background-color: $stripeColor;
 }
 
 .table-center th,
 .table-center td {
-    text-align: center;
+	text-align: center;
 }
 
 .table-center td {
-    @media #{$tableResponsive} {
-        text-align: left;
-    }
+	@media #{$tableResponsive} {
+		text-align: left;
+	}
 }
 
 .table-center th {
-    @media #{$tableResponsive} {
-        text-align: right;
-    }
+	@media #{$tableResponsive} {
+		text-align: right;
+	}
 }
 
 tr {
-    border-bottom: 1px solid $lightGray;
+	border-bottom: 1px solid $lightGray;
 }
 
 td,
 th {
-    padding: 1rem .5rem;
-    display: table-cell;
-    text-align: left;
+	padding: 1rem 0.5rem;
+	display: table-cell;
+	text-align: left;
 }
 
 th {
-    font-weight: 500;
-    text-transform: capitalize;
+	font-weight: 500;
+	text-transform: capitalize;
 }
 
 td {
-    border-left: 1px solid $white;
-    border-right: 1px solid $white;
+	border-left: 1px solid $white;
+	border-right: 1px solid $white;
 }
 
 @media #{$tableResponsive} {
-    table {
-        width: 100%;
-        display: block;
-        position: relative;
+	table {
+		width: 100%;
+		display: block;
+		position: relative;
 
-        thead {
-            display: block;
-            float: left;
+		thead {
+			display: block;
+			float: left;
 
-            th {
-                display: block;
-                text-align: right;
-            }
+			th {
+				display: block;
+				text-align: right;
+			}
 
-            tr {
-                display: block;
-                padding-right: 10px;
-                border-right: 1px solid $dark;
-            }
-        }
+			tr {
+				display: block;
+				padding-right: 10px;
+				border-right: 1px solid $dark;
+			}
+		}
 
-        tbody {
-            display: flex;
-            width: auto;
-            position: relative;
-            overflow-x: auto;
-            white-space: nowrap;
+		tbody {
+			display: flex;
+			width: auto;
+			position: relative;
+			overflow-x: auto;
+			white-space: nowrap;
 
-            tr {
-                display: inline-block;
-                vertical-align: top;
-                border-right: 1px solid $dark;
+			tr {
+				display: inline-block;
+				vertical-align: top;
+				border-right: 1px solid $dark;
 
-                &:last-child {
-                    border: none;
-                }
-            }
-        }
+				&:last-child {
+					border: none;
+				}
+			}
+		}
 
-        td {
-            display: block;
-            min-height: 1.25em;
-            text-align: left;
-            border: none;
-        }
+		td {
+			display: block;
+			min-height: 1.25em;
+			text-align: left;
+			border: none;
+		}
 
-        tr {
-            border-bottom: none;
-            padding: 0 10px;
-        }
-    }
+		tr {
+			border-bottom: none;
+			padding: 0 10px;
+		}
+	}
 }

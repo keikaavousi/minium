@@ -1,38 +1,38 @@
 button,
 .btn,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
-    @extend %inputs;
-    @extend %height;
-    font-size: 0.6875rem;
-    font-weight: 400;
-    font-family: $fontFamily;
-    line-height: 2.375rem;
-    letter-spacing: .08rem;
-    margin: .5rem 0;
-    padding: 0 1.875rem;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+	@extend %inputs;
+	@extend %height;
+	font-size: 0.6875rem;
+	font-weight: 400;
+	font-family: $fontFamily;
+	line-height: 2.375rem;
+	letter-spacing: 0.08rem;
+	margin: 0.5rem 0;
+	padding: 0 1.875rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
 
-    &:not(:disabled) {
-        cursor: pointer;
+	&:not(:disabled) {
+		cursor: pointer;
 
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: $dark;
-            color: $white;
-            border-color: $gray;
-            outline: 0;
-            text-decoration: none;
-        }
-    }
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: $dark;
+			color: $white;
+			border-color: $gray;
+			outline: 0;
+			text-decoration: none;
+		}
+	}
 
-    &:disabled {
-        color: $gray;
-        border-color: $lightGray;
-    }
+	&:disabled {
+		color: $gray;
+		border-color: $lightGray;
+	}
 }
