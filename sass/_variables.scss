@@ -1,16 +1,18 @@
 // colors
 $dark: #0a0a0a;
-$darkGray:#555555;
+$darkGray: #555555;
 $gray: #888888;
 $lightGray: #bbbbbb;
 $white: #ffffff;
 
 // utils
 $borderRadius: 0.16rem;
-$fontFamily: 'Bariol',
-sans-serif;
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+$fontFamily: 'Raleway', sans-serif;
 $fontSize: 1em;
-$fontWeight: 400;
+$fontWeight: 300;
 
 // sizes
 $extraSmall: 'only screen and (max-width:576px)';
@@ -22,27 +24,25 @@ $phablet: 'only screen and (min-width:576px) and (max-width:768px)';
 
 // shared styles
 %inputs {
-    background-color: transparent;
-    border: 0.0625rem solid $lightGray;
-    border-radius: $borderRadius;
-    color: $dark;
-    display: inline-flex;
-    font-weight: 400;
-    padding: .65rem;
+	background-color: transparent;
+	border: 0.0625rem solid $lightGray;
+	border-radius: $borderRadius;
+	color: $dark;
+	display: inline-flex;
+	font-weight: 400;
+	padding: 0.65rem;
 
-    transition: .2s ease-in-out;
-    transition-property: color,
-        background-color,
-        border;
+	transition: 0.2s ease-in-out;
+	transition-property: color, background-color, border;
 
-    &:focus {
-        background-color: $white;
-        color: $dark;
-        border-color: $darkGray;
-        outline: none;
-    }
+	&:focus {
+		background-color: $white;
+		color: $dark;
+		border-color: $darkGray;
+		outline: none;
+	}
 }
 
 %height {
-    height: 2.375rem;
+	height: 2.375rem;
 }

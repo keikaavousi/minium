@@ -1,38 +1,37 @@
 .tooltip {
-    position: relative;
+	position: relative;
 
-    &::after {
-        content: attr(data-tooltip);
-        position: absolute;
-        background-color: $dark;
-        border-radius: $borderRadius;
-        color: $white;
-        padding: 10px;
-        font-size: 0.8em;
-        min-width: 130px;
-        text-align: center;
-        display: none;
-        top: 29px;
-    }
+	&::after {
+		content: attr(data-tooltip);
+		position: absolute;
+		background-color: $dark;
+		border-radius: $borderRadius;
+		color: $white;
+		padding: 10px;
+		font-size: 0.8em;
+		min-width: 130px;
+		text-align: center;
+		display: none;
+		top: 29px;
+	}
 
-    &::before {
-        content: '';
-        width: 0;
-        height: 0;
-        border-left: 7px solid transparent;
-        border-right: 7px solid transparent;
-        border-bottom: 7px solid $dark;
-        position: absolute;
-        top: 23px;
-        left: .4rem;
-        display: none
-    }
+	&::before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px solid $dark;
+		position: absolute;
+		top: 23px;
+		left: 0.4rem;
+		display: none;
+	}
 
-    &:hover {
-
-        &::after,
-        &::before {
-            display: block;
-        }
-    }
+	&:hover {
+		&::after,
+		&::before {
+			display: block;
+		}
+	}
 }

@@ -4,46 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minium | Sidebar Menu</title>
+    <title>Side Navigation Menu</title>
     <link rel="stylesheet" href="../dist/minium.min.css">
     <link rel="stylesheet" href="../dist/menu.min.css">
 </head>
 
 <body>
-    <div class="admin-wrapper">
-        <!-- Start Nav -->
-        <aside>
-            <ul class="side-admin">
-                <a id="brand" href="/">
-                    <img src="../images/logo.svg" alt="">
-                </a>
-                <hr>
-                <li><a href="/#download">Get Started</a></li>
-                <li><a href="/#grid">Document</a></li>
-                <li><a href="#footer">Contact</a></li>
-                <li><a href="/examples.html">Examples</a></li>
+    <!-- Start SideNav -->
+    <aside>
+        <nav class="sidenav">
+            <ul>
+                <li>
+                    <button id="navclose">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="#">Document</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </aside>
-        <!-- End Nav -->
-        <div class="content-wrapper">
-            <nav class="admin-nav">
-                <button id="menubtn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
-            </nav>
-            <!-- Start Content -->
-            <!-- You Should Add Menu Class For Your Container -->
-            <div class="container-fluid menu">
-                <p>Sidebar Menu Example</p>
-            </div>
-            <!-- End Content -->
-        </div>
+        </nav>
+    </aside>
+    <div class="overlay"></div>
+    <!-- End SideNav -->
+    <div class="container-fluid" id="main">
+        <button id="navopen">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <!-- Start Content -->
+        <h1>Example</h1>
+        <!-- End Content -->
     </div>
-    <script src="js/adminsidenav.min.js"></script>
+    <script src="js/sidenav.min.js"></script>
 </body>
 
 </html>

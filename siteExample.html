@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Example Minimal</title>
+    <link rel="stylesheet" href="dist/minium.min.css">
+    <link rel="stylesheet" href="dist/menu.min.css">
+    <style>
+        .container {
+            width: 80%
+        }
+
+        h1 {
+            font-size: 1.8rem
+        }
+
+        h2 {
+            font-size: 1.5rem
+        }
+
+        h3 {
+            font-size: 1.2rem
+        }
+
+        h4 {
+            font-size: 1rem
+        }
+
+        .responsive-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start
+        }
+
+        main {
+            padding-top: 150px
+        }
+
+        main #product .container .row :first-child img {
+            max-width: 100%
+        }
+
+        main #about {
+            background-color: #f1f1f1;
+            padding: 100px 0
+        }
+
+        main #features .container .row :first-child img {
+            max-width: 100%
+        }
+
+        main #add {
+            padding: 200px 0;
+            background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)),
+                    to(rgba(0, 0, 0, 0.527))), url(images/feature-bg.jpg);
+            background: linear-gradient(to right, rgba(0, 0, 0, 0),
+                    rgba(0, 0, 0, 0.527)), url(images/feature-bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover
+        }
+
+        main #add .row {
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end
+        }
+
+        main #add .inner-add {
+            max-width: 500px
+        }
+
+        main #add h1,
+        main #add a {
+            color: white
+        }
+
+        main #pricing {
+            padding: 100px 0
+        }
+
+        main #pricing .row a img {
+            width: 200px
+        }
+
+        main #pricing .row h1,
+        main #pricing .row h4 {
+            margin: 0.5rem 0
+        }
+
+        main #pricing .row h2 {
+            color: gray
+        }
+
+        main #pricing .row :last-child img {
+            width: 100%
+        }
+
+        main #contact {
+            padding: 150px 0;
+            background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)),
+                    to(rgba(0, 0, 0, 0.623))), url(images/cta_bg-mirror.jpg) no-repeat center center;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.623)), url(images/cta_bg-mirror.jpg) no-repeat center center;
+            background-size: cover
+        }
+
+        main #contact .inner-sub h1,
+        main #contact .inner-sub p {
+            color: white
+        }
+
+        main #contact .inner-sub form {
+            position: relative
+        }
+
+        main #contact .inner-sub form input {
+            outline: none;
+            height: 38px;
+            background-color: white
+        }
+
+        main #contact .inner-sub form button {
+            background-color: #0a0a0a;
+            color: white;
+            position: absolute;
+            top: -8px;
+            right: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0
+        }
+
+        main #contact .inner-sub form button:hover {
+            background-color: #707070
+        }
+
+        footer {
+            background-color: #f3f3f3;
+            padding: 80px 0
+        }
+
+        @media screen and (max-width: 992px) {
+            footer .l6 {
+                margin: 2rem 0
+            }
+        }
+
+        footer h1 {
+            margin: 0
+        }
+
+        .go-to-top {
+            position: fixed;
+            cursor: pointer;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            z-index: 90;
+            background-color: black;
+            padding: 12.5px
+        }
+
+        .go-to-top svg {
+            stroke: white
+        }
+    </style>
+</head>
+
+<body>
+    <a class="go-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
+        </svg>
+    </a>
+    <header>
+        <nav class="nav">
+            <a href="#">Bang & Olufsen</a>
+            <label id="lblmenu" for="menu">
+                <input type="checkbox" name="menu" id="menu" />
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+                    <path d="M0 70l28-28c2-2 2-2 7-2h64"></path>
+                    <path d="M0 50h99"></path>
+                    <path d="M0 50h99"></path>
+                    <path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+                    <path d="M0 30l28 28c2 2 2 2 7 2h64"></path>
+                </svg>
+            </label>
+            <ul>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#add">Reviews</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="product">
+            <div class="container">
+                <div class="row">
+                    <div class="xl6">
+                        <img src="images/hero.jpg" alt="">
+                    </div>
+                    <div class="xl6 responsive-text">
+                        <h1>Wireless Bluetooth Speakers of tomorrow</h1>
+                        <p>Beoplay A1 bluetooth speakers image on the left is owned by Bang and Olufsen and is released
+                            under creative
+                            commons lisence. So, I downloaded it and displayed it here in my demo.</p>
+                        <a href="#" class="btn">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="margin-top-l" id="about">
+            <div class="container center-align">
+                <h2>Best in class bluetooth speaker in the market.Though A1 has smooth round edges it is built with
+                    the cutting edge technology.
+                </h2>
+                <h3><em>The Verge</em></h3>
+            </div>
+        </section>
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="xl6">
+                        <img src="images/details.jpg" alt="">
+                    </div>
+                    <div class="xl6 responsive-text">
+                        <h1>Features & Specifications</h1>
+                        <ul>
+                            <li>Firstly, most elegat and beautiful design</li>
+                            <li>36 Hours battery Backup</li>
+                            <li>Bluetooth 4.0 Upto 20 Feet & Microphhone upto 10 feet</li>
+                            <li>Highly Durable Body and Strap</li>
+                            <li>Supports Siri, Cortana and Google Voice</li>
+                            <li>Android, Apple and Windows Compatible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="add">
+            <div class="container">
+                <div class="row">
+                    <div class="l12 inner-add">
+                        <h1>With A1 when you Play the music you'll feel the rhythm of heavens passing through chimes of
+                            your
+                            freedom.</h1>
+                        <a href="#" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="xl6 responsive-text">
+                        <h1>A1 Bluetooth Speakers</h1>
+                        <h4>Android and iOS Compatible</h4>
+                        <p>Sleek and Elegant Bluetooth Speakers you'll love to carry around.Order and Get them for a
+                            cool price on Amazon today.</p>
+                        <a href="#">
+                            <img src="images/amazon.png" alt="">
+                        </a>
+                        <h2>at just $99.98</h2>
+                    </div>
+                    <div class="xl6">
+                        <img src="images/pricing_image.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="inner-sub">
+                        <h1>Love offers and discounts? Subscribe and save.</h1>
+                        <p>Don't worry, we won't need your credit card details. Just enter your<br>email address and
+                            we'll take care of the rest.
+                        </p>
+                        <form action="">
+                            <input type="email" name="" id="" placeholder="Join the wait list">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="l6 responsive-text">
+                    <a href="#">Bang & Olufsen</a>
+                    <p>A technology startup based somewhere in the world.making the finest bluetooth speakers ever
+                        made.You'll know our location if you really love us.</p>
+                    <p>Copyright © 2020 Minium Inc. All Rights Reserved.</p>
+                </div>
+                <div class="l6 responsive-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <h1>Need Help ?</h1>
+                    <p>Contact our 24/7 customer support if you have any <br>questions. We'll help you out.</p>
+                    <a href="#">support@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/animationmenu.js"></script>
+    <script>
+        document.querySelector('.go-to-top').addEventListener('click', function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+
+</html>

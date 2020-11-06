@@ -1,9 +1,9 @@
 ::placeholder {
-    color: $lightGray;
+	color: $lightGray;
 }
 
 input {
-    @extend %inputs;
+	@extend %inputs;
 }
 
 input,
@@ -11,68 +11,67 @@ textarea,
 select,
 fieldset,
 datalist {
-    margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 fieldset {
-    border: none;
+	border: none;
 }
 
-input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+input:not([type='button']):not([type='reset']):not([type='submit']):not([type='radio']):not([type='checkbox']),
 select,
 textarea,
 datalist,
 fieldset {
-    width: 100%;
+	width: 100%;
 }
 
 legend {
-    display: block;
-    font-weight: 500;
-    margin-bottom: .5rem;
-    text-transform: capitalize;
+	display: block;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+	text-transform: capitalize;
 }
 
-input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="color"]):not([type="button"]):not([type="submit"]):not([type="reset"]),
+input:not([type='radio']):not([type='checkbox']):not([type='range']):not([type='color']):not([type='button']):not([type='submit']):not([type='reset']),
 select,
 datalist {
-    @extend %inputs;
+	@extend %inputs;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 5px;
-    margin-left: 5px;
+input[type='radio'],
+input[type='checkbox'] {
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
 textarea {
-    @extend %inputs;
-    resize: none;
+	@extend %inputs;
+	resize: none;
 }
 
 select {
-    padding-left: 15px;
-    appearance: none;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAgklEQVRIie2SQQqAIBBFH90hqfsfxV20qkUH6QC2aIQhzKwUCnwwu5n/BD9U/oaVKYaTSaYp9JAq+LjAAiNgbuQYuUmq8MBexTkgCdXUyK6T20taYJKDBegjguNulyKISbTgcXhM4gWvw88kXpAl3KM/UU+oBNkkWcO1ZJXJHl4pxwa9wjhj/WdK6AAAAABJRU5ErkJggg==') no-repeat;
-    background-position: right .9em top 50%,
-        0 0;
-    background-size: 1em auto,
-        100%;
+	padding-left: 15px;
+	appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 0.9em top 50%, 0 0;
+	background-size: 1rem auto, 100%;
 
-    option {
-        border-color: $dark;
-    }
+	option {
+		border-color: $dark;
+	}
 }
 
-input[type="file"] {
-    padding: .45rem;
+input[type='file'] {
+	padding: 0.45rem;
 }
 
-input[type="color"] {
-    padding: .375rem;
-    @extend %height;
+input[type='color'] {
+	padding: 0.375rem;
+	@extend %height;
 }
 
 datalist {
-    display: none;
+	display: none;
 }
