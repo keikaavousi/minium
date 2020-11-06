@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://saeedkefayati.github.io/minium/">
-    <img src="https://saeedkefayati.github.io/minium/images/logo.png" alt="Minium logo" width="200" height="165">
+    <img src="https://saeedkefayati.github.io/minium/images/logo.png" alt="Minium logo" width="200" height="200">
   </a>
 </p>
 
