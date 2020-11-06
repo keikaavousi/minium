@@ -3,25 +3,20 @@
     <img src="https://github.com/saeedkefayati/minium/blob/master/images/logo.png" alt="Minium logo" width="200" height="200">
   </a>
 </p>
-
-
-
-# Minium
-Just another minimal CSS framework.
-
-
+<br>
+<br>
 ## Installation
 - [Download the latest release](https://github.com/saeedkefayati/minium/archive/master.zip)
 - Clone the repo: `git clone https://github.com/saeedkefayati/minium.git`
 - Install with [npm](https://www.npmjs.com/): `npm install minium`
-
-
+<br>
+<br>
 ## Documentation
 Read the [Documentation](https://saeedkefayati.github.io/minium/) for information on the framework contents, templates and examples, and more.
-
-
+<br>
+<br>
 ## Creators
-
+<br>
 **Mohammad Reza Keikavousi**
 
 - <https://keikaavousi.com/>
