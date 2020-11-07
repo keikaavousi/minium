@@ -1,20 +1,45 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: $dark;
-    outline-color: $dark;
-    scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $dark;
+	outline-color: $dark;
+	scroll-behavior: smooth;
 
-    &::selection {
-        background: $dark;
-        color: $white;
-        text-shadow: none;
-    }
+	&::selection {
+		background: $dark;
+		color: $white;
+		text-shadow: none;
+	}
 }
 
 body {
-    width: 100%;
-    font: $fontWeight $fontSize $fontFamily;
-    overflow-x: hidden;
+	width: 100%;
+	font: $fontWeight $fontSize $fontFamily;
+	overflow-x: hidden;
+}
+
+// shared styles
+%inputs {
+	background-color: transparent;
+	border: 0.0625rem solid $lightGray;
+	border-radius: $borderRadius;
+	color: $dark;
+	display: inline-flex;
+	font-weight: 400;
+	padding: 0.65rem;
+
+	transition: 0.2s ease-in-out;
+	transition-property: color, background-color, border;
+
+	&:focus {
+		background-color: $white;
+		color: $dark;
+		border-color: $darkGray;
+		outline: none;
+	}
+}
+
+%height {
+	height: 2.375rem;
 }

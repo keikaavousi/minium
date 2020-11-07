@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minium Menu Example</title>
-    <link rel="stylesheet" href="../dist/minium.min.css">
-    <link rel="stylesheet" href="../dist/menu.min.css">
-    <link rel="stylesheet" href="../dist/copy.min.css">
+    <link rel="stylesheet" href="dist/minium.min.css">
+    <link rel="stylesheet" href="dist/menu.min.css">
+    <link rel="stylesheet" href="dist/copy.min.css">
     <style>
         footer {
             background-color: #0a0a0a;
@@ -39,22 +39,24 @@
             <ul>
                 <li><a href="/#download">Get Started</a></li>
                 <li><a href="/#grid">Document</a></li>
-                <li><a href="#footer">Contact</a></li>
-                <li><a href="/examples.html">Examples</a></li>
+                <li><a href="/#footer">Contact</a></li>
+                <li><a href="examples.html">Examples</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
         <section class="margin-top-l" id="hamburger">
-            <h3>
-                <a href="./hamburger.html">Hamburger Menu</a>
-            </h3>
+            <h3 class="inline-block">Hamburger Menu</h3>
+            <a class="padding-s" href="menu/hamburger.html">Demo</a>
+            <p style="color: red;">If You Wanna Your Style Be Similar To Our
+                Style You Should Add 'menu.css' File To Your
+                Project.</p>
             <p class="justify-start items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 384 512">
                     <path fill="currentColor"
                         d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
                 </svg>
-                <span>&nbsp;</span>
+                <span>&nbsp;File</span>
             </p>
             <pre>
                 <code class="precode">&lt;nav class="nav"&gt;&#10;&#9;&lt;a href="#" id="brand"&gt;Brand&lt;&sol;a&gt;&#10;&#9;&lt;label id="lblmenu" for="menu"&gt;&#10;&#9;&#9;&lt;input type="checkbox" name="menu" id="menu"&sol;&gt;&#10;&#9;&#9;&lt;svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 70l28-28c2-2 2-2 7-2h64"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 70l28-28c2-2 2-2 7-2h64"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 50h99"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 50h99"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 30l28 28c2 2 2 2 7 2h64"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&#9;&lt;path d="M0 30l28 28c2 2 2 2 7 2h64"&gt;&lt;&sol;path&gt;&#10;&#9;&#9;&lt;&sol;svg&gt;&#10;&#9;&lt;&sol;label&gt;&#10;&#9;&lt;ul&gt;&#10;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&lt;&sol;ul&gt;&#10;&lt;&sol;nav&gt;&#10;&lt;div class="menu container"&gt;&#10;&#9;&lt;h1&gt;Start Content&lt;&sol;h1&gt;&#10;&lt;&sol;div&gt;</code>
@@ -70,7 +72,7 @@
                     <path fill="currentColor"
                         d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
                 </svg>
-                <span>&nbsp;</span>
+                <span>&nbsp;File</span>
             </p>
             <pre>
                 <code class="precode">let btnmenu = document.getElementsByTagName("input")[0];&#10;let navbar = document.getElementsByTagName("ul")[0];&#10;btnmenu.addEventListener("click", function () {&#10;&#9;btnmenu.checked&#10;&#9;&#9;? navbar.classList.add('open')&#10;&#9;&#9;: navbar.classList.remove('open');&#10;});</code>
@@ -83,17 +85,17 @@
             </pre>
         </section>
         <section class="margin-top-l" id="side">
-            <h3>
-                <a href="./overlay.html">
-                    Overlay Sidebar Menu
-                </a>
-            </h3>
+            <h3 class="inline-block">Overlay Sidebar Menu</h3>
+            <a class="padding-s" href="menu/sidenav.html">Demo</a>
+            <p style="color: red;">If You Wanna Your Style Be Similar To Our
+                Style You Should Add 'menu.css' File To Your
+                Project.</p>
             <p class="justify-start items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 384 512">
                     <path fill="currentColor"
                         d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
                 </svg>
-                <span>&nbsp;</span>
+                <span>&nbsp;File</span>
             </p>
             <pre>
                 <code class="precode">&lt;aside&gt;&#10;&#9;&lt;nav class="sidenav"&gt;&#10;&#9;&#9;&lt;ul&gt;&#10;&#9;&#9;&#9;&lt;li&gt;&#10;&#9;&#9;&#9;&#9;&lt;button id="navclose"&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;line x1="18" y1="6" x2="6" y2="18"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&lt;line x1="6" y1="6" x2="18" y2="18"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;&sol;svg&gt;&#10;&#9;&#9;&#9;&#9;&lt;&sol;button&gt;&#10;&#9;&#9;&#9;&lt;&sol;li&gt;&#10;&#9;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&lt;&sol;ul&gt;&#10;&#9;&lt;&sol;nav&gt;&#10;&lt;&sol;aside&gt;&#10;&lt;div class="overlay"&gt;&lt;&sol;div&gt;&#10;&lt;div class="container-fluid" id="main"&gt;&#10;&#9;&lt;button id="navopen"&gt;&#10;&#9;&#9;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&#10;&#9;&#9;&#9;&lt;line x1="3" y1="12" x2="21" y2="12"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&lt;line x1="3" y1="6" x2="21" y2="6"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&lt;line x1="3" y1="18" x2="21" y2="18"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&lt;&sol;svg&gt;&#10;&#9;&lt;&sol;button&gt;&#10;&#9;&lt;h1&gt;Example&lt;&sol;h1&gt;&#10;&lt;&sol;div&gt;</code>
@@ -109,7 +111,7 @@
                     <path fill="currentColor"
                         d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
                 </svg>
-                <span>&nbsp;</span>
+                <span>&nbsp;File</span>
             </p>
             <pre>
                 <code class="precode">let closebtn = document.getElementById("navclose");&#10;let openbtn = document.getElementById("navopen");&#10;let sidenav = document.getElementsByClassName("sidenav")[0];&#10;let main = document.getElementById("main");&#10;let overlay = document.getElementsByClassName("overlay")[0];&#10;openbtn.addEventListener("click", function () {&#10;&#9;main.style.marginLeft = "250px";&#10;&#9;sidenav.style.width = "250px";&#10;&#9;overlay.classList.add("overlayed");&#10;});&#10;closebtn.addEventListener("click", function () {&#10;&#9;main.style.marginLeft = "0px";&#10;&#9;sidenav.style.width = "0px";&#10;&#9;overlay.classList.remove("overlayed");&#10;});</code>
@@ -122,17 +124,17 @@
             </pre>
         </section>
         <section class="margin-top-l" id="admin">
-            <h3>
-                <a href="./sidenav.html">
-                    Sidebar Menu
-                </a>
-            </h3>
+            <h3 class="inline-block">Sidebar Menu</h3>
+            <a class="padding-s" href="menu/adminsidenav.html">Demo</a>
+            <p style="color: red;">If You Wanna Your Style Be Similar To Our
+                Style You Should Add 'menu.css' File To Your
+                Project.</p>
             <p class="justify-start items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 384 512">
                     <path fill="currentColor"
                         d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
                 </svg>
-                <span>&nbsp;</span>
+                <span>&nbsp;File</span>
             </p>
             <pre>
                 <code class="precode">&lt;div class="admin-wrapper"&gt;&#10;&#9;&lt;aside&gt;&#10;&#9;&#9;&lt;ul class="side-admin"&gt;&#10;&#9;&#9;&#9;&lt;a href="#" id="brand"&gt;&#10;&#9;&#9;&#9;&#9;&lt;img src="" alt=""&sol;&gt;&#10;&#9;&#9;&#9;&lt;&sol;a&gt;&#10;&#9;&#9;&#9;&lt;hr&gt;&#10;&#9;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&#9;&lt;li&gt;&lt;a href="#"&gt;Link&lt;&sol;a&gt;&lt;&sol;li&gt;&#10;&#9;&#9;&lt;&sol;ul&gt;&#10;&#9;&lt;&sol;aside&gt;&#10;&#9;&lt;div class="content-wrapper"&gt;&#10;&#9;&#9;&lt;nav class="admin-nav"&gt;&#10;&#9;&#9;&#9;&lt;button id="menubtn"&gt;&#10;&#9;&#9;&#9;&#9;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;line x1="3" y1="12" x2="21" y2="12"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;line x1="3" y1="6" x2="21" y2="6"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&#9;&#9;&lt;line x1="3" y1="18" x2="21" y2="18"&gt;&lt;&sol;line&gt;&#10;&#9;&#9;&#9;&#9;&lt;&sol;svg&gt;&#10;&#9;&#9;&#9;&lt;&sol;button&gt;&#10;&#9;&#9;&lt;&sol;nav&gt;&#10;&#9;&#10;&#9;&#9;&lt;div class="menu container-fluid"&gt;&#10;&#9;&#9;&#9;&lt;h1&gt;Example&lt;&sol;h1&gt;&#10;&#9;&#9;&lt;&sol;div&gt;&#10;&#9;&lt;&sol;div&gt;&#10;&lt;&sol;div&gt;</code>
@@ -148,7 +150,7 @@
                     <path fill="currentColor"
                         d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
                 </svg>
-                <span>&nbsp;</span>
+                <span>&nbsp;File</span>
             </p>
             <pre>
                 <code class="precode">let btnmenu = document.querySelector("#menubtn");&#10;let sidebar = document.getElementsByTagName("ul")[0];&#10;let content = document.getElementsByClassName("content-wrapper")[0];&#10;let menutoggle = false;&#10;btnmenu.addEventListener('click', function () {&#10;&#9;menutoggle = !menutoggle;&#10;&#9;if (menutoggle) {&#10;&#9;sidebar.classList.add('sidetoggle');&#10;&#9;content.classList.add('contenttoggle');&#10;&#9;} else {&#10;&#9;sidebar.classList.remove('sidetoggle');&#10;&#9;content.classList.remove('contenttoggle');&#10;&#9;}&#10;});</code>
@@ -167,7 +169,7 @@
         <a class="btn" href="#">Donate Us</a>
     </footer>
     <script src="js/master.min.js"></script>
-    <script src="js/hamburger.min.js"></script>
+    <script src="menu/js/hamburger.min.js"></script>
 </body>
 
 </html>

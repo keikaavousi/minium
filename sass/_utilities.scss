@@ -1,209 +1,210 @@
 .block {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .inline-block {
-    display: inline-block;
+	display: inline-block;
 }
 
 .hidden {
-    display: none !important;
+	display: none !important;
 }
 
 .column-direction {
-    flex-direction: column;
+	flex-direction: column;
 }
 
 .wrap {
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .nowrap {
-    flex-wrap: nowrap;
+	flex-wrap: nowrap;
 }
 
 .justify-start {
-    display: flex;
-    justify-content: flex-start;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .justify-center {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .justify-end {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .items-start {
-    align-items: flex-start;
+	align-items: flex-start;
 }
 
 .items-center {
-    align-items: center;
+	align-items: center;
 }
 
 .items-end {
-    align-items: flex-end;
+	align-items: flex-end;
 }
 
 .center-align {
-    text-align: center;
+	text-align: center;
 }
 
 .left-align {
-    text-align: left;
+	text-align: left;
 }
 
 .right-align {
-    text-align: right;
+	text-align: right;
 }
 
 .justify-align {
-    text-align: justify;
+	text-align: justify;
 }
 
 .pull-left {
-    float: left !important;
+	float: left !important;
 }
 
 .pull-right {
-    float: right !important;
+	float: right !important;
 }
 
 .margin-auto {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .margin-none {
-    margin: 0;
+	margin: 0;
 }
 
 @mixin margins($orientation, $pixel) {
-    margin-#{$orientation}: $pixel !important;
+	margin-#{$orientation}: $pixel !important;
 }
 
 .margin-top-xl {
-    @include margins(top, 200px);
+	@include margins(top, 200px);
 }
 
 .margin-top-l {
-    @include margins(top, 100px);
+	@include margins(top, 100px);
 }
 
 .margin-top-m {
-    @include margins(top, 50px);
+	@include margins(top, 50px);
 }
 
 .margin-top-s {
-    @include margins(top, 30px);
+	@include margins(top, 30px);
 }
 
 .margin-bottom-l {
-    @include margins(bottom, 100px);
+	@include margins(bottom, 100px);
 }
 
 .margin-bottom-m {
-    @include margins(bottom, 50px);
+	@include margins(bottom, 50px);
 }
 
 .margin-bottom-s {
-    @include margins(bottom, 30px);
+	@include margins(bottom, 30px);
 }
 
 .padding-l {
-    padding: 100px;
+	padding: 100px;
 }
 
 .padding-m {
-    padding: 20px;
+	padding: 20px;
 }
 
 .padding-s {
-    padding: 10px;
+	padding: 10px;
 }
 
 .center-block {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .box-center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .border-radius {
-    border-radius: $borderRadius
+	border-radius: $borderRadius;
 }
 
 .shadow {
-    box-shadow: 0 10px 30px rgba(50, 50, 93, 0.12), 0 -1px 4px rgba(0, 0, 0, 0.06);
+	box-shadow: 0 10px 30px rgba(50, 50, 93, 0.12),
+		0 -1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .label {
-    display: inline-block;
-    background: lighten($lightGray, 12.5%);
-    padding: 5px 10px;
-    border-radius: 20px;
+	display: inline-block;
+	background: lighten($lightGray, 12.5%);
+	padding: 5px 10px;
+	border-radius: 20px;
 }
 
 .label-s {
-    font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 @media #{$extraSmall} {
-    .hidden-x {
-        display: none !important;
-    }
+	.hidden-x {
+		display: none !important;
+	}
 
-    .visible-x {
-        display: block !important;
-    }
+	.visible-x {
+		display: block !important;
+	}
 }
 
 @media #{$small} {
-    .hidden-s {
-        display: none !important;
-    }
+	.hidden-s {
+		display: none !important;
+	}
 
-    .visible-s {
-        display: block !important;
-    }
+	.visible-s {
+		display: block !important;
+	}
 }
 
 @media #{$medium} {
-    .hidden-m {
-        display: none !important;
-    }
+	.hidden-m {
+		display: none !important;
+	}
 
-    .visible-m {
-        display: block !important;
-    }
+	.visible-m {
+		display: block !important;
+	}
 }
 
 @media #{$large} {
-    .hidden-l {
-        display: none !important;
-    }
+	.hidden-l {
+		display: none !important;
+	}
 
-    .visible-l {
-        display: block !important;
-    }
+	.visible-l {
+		display: block !important;
+	}
 }
 
 @media #{$extraLarge} {
-    .hidden-xl {
-        display: none !important;
-    }
+	.hidden-xl {
+		display: none !important;
+	}
 
-    .visible-xl {
-        display: block !important;
-    }
+	.visible-xl {
+		display: block !important;
+	}
 }

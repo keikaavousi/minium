@@ -1,62 +1,62 @@
 .container {
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 15px;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 15px;
 
-    @media #{$extraSmall} {
-        width: 100%;
-    }
+	@media #{$extraSmall} {
+		width: 100%;
+	}
 
-    @media #{$phablet} {
-        width: 80%;
-    }
+	@media #{$phablet} {
+		width: 80%;
+	}
 }
 
 .container-fluid {
-    width: 100%;
-    margin-right: auto;
-    padding: 0 15px;
-    margin-left: auto;
+	width: 100%;
+	margin-right: auto;
+	padding: 0 15px;
+	margin-left: auto;
 }
 
 .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 @mixin grid-generator($size) {
-    @for $i from 1 through 12 {
-        .#{$size}#{$i} {
-            max-width: percentage($i / 12);
-            flex-basis: percentage($i / 12);
-            flex-grow: 1;
-            padding: 15px;
-            min-height: 1px;
-            position: relative;
-        }
-    }
+	@for $i from 1 through 12 {
+		.#{$size}#{$i} {
+			max-width: percentage($i / 12);
+			flex-basis: percentage($i / 12);
+			flex-grow: 1;
+			padding: 15px;
+			min-height: 1px;
+			position: relative;
+		}
+	}
 }
 
-//eg:  .x1  .s7  .m12  .l6   .xl3 
+//eg:  .x1  .s7  .m12  .l6   .xl3
 @media #{$extraSmall} {
-    @include grid-generator(x);
+	@include grid-generator(x);
 }
 
 @media #{$small} {
-    @include grid-generator(s);
+	@include grid-generator(s);
 }
 
 @media #{$medium} {
-    @include grid-generator(m);
+	@include grid-generator(m);
 }
 
 @media #{$large} {
-    @include grid-generator(l);
+	@include grid-generator(l);
 }
 
 @media #{$extraLarge} {
-    @include grid-generator(xl);
+	@include grid-generator(xl);
 }

@@ -1,35 +1,33 @@
 .spinner {
-    width: 80px;
-    height: 80px;
-    border: $borderRadius solid $dark;
-    border-right-color: transparent;
-    border-radius: 50%;
-    animation: spinner .7s linear infinite;
-    -webkit-animation: spinner .7s linear infinite;
+	width: 80px;
+	height: 80px;
+	border: $borderRadius solid $dark;
+	border-right-color: transparent;
+	border-radius: 50%;
+	animation: spinner 0.7s linear infinite;
 }
 
 @keyframes spinner {
-    to {
-        transform: rotate(360deg);
-    }
+	to {
+		transform: rotate(360deg);
+	}
 }
 
-
 .loading {
-    width: 80px;
-    height: 80px;
+	width: 80px;
+	height: 80px;
 
-    circle {
-        stroke: $dark;
-        stroke-width: .16rem;
-        stroke-dasharray: 19;
-        stroke-dashoffset: 1000;
-        animation: loading 3s ease infinite;
-    }
+	circle {
+		stroke: $dark;
+		stroke-width: 0.16rem;
+		stroke-dasharray: 19;
+		stroke-dashoffset: 1000;
+		animation: loading 3s ease infinite;
+	}
 }
 
 @keyframes loading {
-    to {
-        stroke-dashoffset: 0;
-    }
+	to {
+		stroke-dashoffset: 0;
+	}
 }
