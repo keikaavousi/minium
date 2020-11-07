@@ -1,4 +1,23 @@
 {
-    "name": "minium",
-    "version": "1.0.2"
+  "name": "minium",
+  "version": "1.0.2",
+  "description": "<p align=\"center\">\r   <a href=\"https://saeedkefayati.github.io/minium/\">\r     <img src=\"https://github.com/saeedkefayati/minium/blob/master/images/logo.png\" alt=\"Minium logo\" width=\"200\" height=\"200\">\r   </a>\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saeedkefayati/minium.git"
+  },
+  "keywords": [
+    "minium",
+    "minimal"
+  ],
+  "author": "minium",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saeedkefayati/minium/issues"
+  },
+  "homepage": "https://github.com/saeedkefayati/minium#readme"
 }
