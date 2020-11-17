@@ -53,10 +53,9 @@ textarea {
 select {
 	padding-left: 15px;
 	appearance: none;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
-	background-repeat: no-repeat;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAgklEQVRIie2SQQqAIBBFH90hqfsfxV20qkUH6QC2aIQhzKwUCnwwu5n/BD9U/oaVKYaTSaYp9JAq+LjAAiNgbuQYuUmq8MBexTkgCdXUyK6T20taYJKDBegjguNulyKISbTgcXhM4gWvw88kXpAl3KM/UU+oBNkkWcO1ZJXJHl4pxwa9wjhj/WdK6AAAAABJRU5ErkJggg==') no-repeat;
 	background-position: right 0.9em top 50%, 0 0;
-	background-size: 1rem auto, 100%;
+	background-size: 1em auto, 100%;
 
 	option {
 		border-color: $dark;
